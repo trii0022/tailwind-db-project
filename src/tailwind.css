@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply bg-background;
+  }
+  h1 {
+    @apply font-montserrat;
+    @apply text-secondary;
+  }
+  h2 {
+    @apply text-lg;
+    @apply font-montserrat;
+    @apply text-secondary;
+    @apply font-bold;
+  }
+
+  h3 {
+    @apply text-lg;
+    @apply font-lato;
+  }
+  h4 {
+    @apply text-md;
+    @apply font-lato;
+    @apply text-secondary;
+  }
+
+  p {
+    @apply text-md;
+    @apply font-lato;
+    @apply text-secondary;
+    @apply font-normal;
+  }
+}
