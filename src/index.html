@@ -28,8 +28,8 @@
         </div>
         <div class="hidden flex-none md:flex">
           <ul class="menu menu-horizontal p-0">
-            <li><a class="text-lg text-secondary">Browse restaurants</a></li>
-            <a class="self-center text-lg text-secondary">|</a>
+            <li><a class="text-md text-secondary">Browse restaurants</a></li>
+            <a class="self-center text-md text-secondary">|</a>
             <li><a class="text-primary">Sign up</a></li>
             <li><a class="text-secondary">Log in</a></li>
             <li tabindex="0">
@@ -88,7 +88,7 @@
 
     <!-- Hero section mobile -->
 
-    <div class="min-h-screen flex-none sm:hero lg:hidden">
+    <div class="xs:hero flex-none sm:hidden sm:min-h-screen">
       <div class="hero-content flex-col lg:flex-row-reverse">
         <div class="lg:pr-10 lg:text-left">
           <img src="img/hero.webp" alt="" />
@@ -96,10 +96,10 @@
 
         <div class="lg:pl-10">
           <div
-            class="card w-full max-w-md flex-shrink-0 bg-base-100 pt-5 pb-5 shadow-2xl"
+            class="card -mt-28 w-full max-w-md flex-shrink-0 bg-base-100 pt-5 pb-5 shadow-2xl sm:mt-0"
           >
             <div class="card-body">
-              <h1 class="mb-3 font-extrabold sm:text-xl">
+              <h1 class="mb-3 text-lg font-extrabold sm:text-xl">
                 Start your dining experience here
               </h1>
               <div class="form-control">
@@ -144,9 +144,9 @@
 
     <!-- hero section desktop screen -->
 
-    <div class="mt-10 hidden flex-none pl-20 pr-20 lg:flex">
+    <div class="mt-10 hidden flex-none pl-20 pr-20 sm:flex">
       <div class="gridhero">
-        <img src="img/hero.webp" alt="" class="image" />
+        <img src="img/hero.webp" alt="" class="image -ml-32 md:ml-0" />
 
         <div
           class="grid-content card mt-14 mb-14 w-full flex-shrink-0 bg-base-100 pt-5 pb-5 shadow-2xl"
@@ -193,113 +193,115 @@
       </div>
     </div>
 
-    <!-- end of hero section 3 -->
+    <!-- end of hero section desktop screen -->
 
     <!-- Most popular restaurants -->
 
-    <div class="mb-5 grid grid-cols-1 sm:mt-14 sm:grid-cols-2">
-      <h2 class="text-center md:ml-28 md:text-start">
-        Most popular restaurants in Tallinn
-      </h2>
+    <div class="hidden sm:grid">
+      <div class="mb-5 mt-3 grid grid-cols-1 sm:mt-16 sm:grid-cols-2">
+        <h2 class="text-center md:ml-28 md:text-start">
+          Most popular restaurants in Tallinn
+        </h2>
 
-      <p
-        class="link-hover link text-center font-bold text-primary md:mr-28 md:text-end"
-      >
-        Browse all restaurants
-      </p>
-    </div>
-
-    <div
-      class="grid sm:grid-cols-2 sm:gap-3 md:ml-28 md:mr-28 md:grid-cols-3 lg:ml-28 lg:mr-28 xl:grid-cols-4 2xl:grid-cols-4"
-    >
-      <div
-        class="card card-compact flex w-72 justify-self-center bg-base-100 shadow-xl"
-      >
-        <figure>
-          <img src="img/rudolf.webp" alt="Rudolf restaurant" class="" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Rudolf restaurant</h2>
-          <div class="-mt-1 flex">
-            <img src="img/rating.webp" alt="" class="mr-3 h-5" />
-            <h4 class="underline">341 reviews</h4>
-          </div>
-          <p>French · Gourmet</p>
-          <div class="card-actions justify-end">
-            <button
-              class="btn-primary btn border-none bg-primary hover:bg-blue-700"
-            >
-              Book a table
-            </button>
-          </div>
-        </div>
+        <p
+          class="link-hover link text-center font-bold text-primary md:mr-28 md:text-end"
+        >
+          Browse all restaurants
+        </p>
       </div>
 
       <div
-        class="card card-compact flex w-72 justify-self-center bg-base-100 shadow-xl"
+        class="grid sm:grid-cols-2 sm:gap-3 md:ml-28 md:mr-28 md:grid-cols-3 lg:ml-28 lg:mr-28 xl:grid-cols-4 2xl:grid-cols-4"
       >
-        <figure>
-          <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Mantel & Korsten</h2>
-          <div class="-mt-1 flex">
-            <img src="img/rating.webp" alt="" class="mr-3 h-5" />
-            <h4 class="underline">115 reviews</h4>
-          </div>
-          <p>Italian · Fine dining</p>
-          <div class="card-actions justify-end">
-            <button
-              class="btn-primary btn border-none bg-primary hover:bg-blue-700"
-            >
-              Book a table
-            </button>
+        <div
+          class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+        >
+          <figure>
+            <img src="img/rudolf.webp" alt="Rudolf restaurant" class="" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Rudolf restaurant</h2>
+            <div class="-mt-1 flex">
+              <img src="img/rating.webp" alt="" class="mr-3 h-5" />
+              <h4 class="underline">341 reviews</h4>
+            </div>
+            <p>French · Gourmet</p>
+            <div class="card-actions justify-end">
+              <button
+                class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+              >
+                Book a table
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div
-        class="card card-compact flex w-72 justify-self-center bg-base-100 shadow-xl"
-      >
-        <figure>
-          <img src="img/barbarea.webp" alt="Barbarea restaurant" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Barbarea</h2>
-          <div class="-mt-1 flex">
-            <img src="img/rating.webp" alt="" class="mr-3 h-5" />
-            <h4 class="underline">720 reviews</h4>
-          </div>
-          <p>Italian · Casual</p>
-          <div class="card-actions justify-end">
-            <button
-              class="btn-primary btn border-none bg-primary hover:bg-blue-700"
-            >
-              Book a table
-            </button>
+        <div
+          class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+        >
+          <figure>
+            <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Mantel & Korsten</h2>
+            <div class="-mt-1 flex">
+              <img src="img/rating.webp" alt="" class="mr-3 h-5" />
+              <h4 class="underline">115 reviews</h4>
+            </div>
+            <p>Italian · Fine dining</p>
+            <div class="card-actions justify-end">
+              <button
+                class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+              >
+                Book a table
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div
-        class="card card-compact flex w-72 justify-self-center bg-base-100 shadow-xl"
-      >
-        <figure>
-          <img src="img/nch.webp" alt="Noa Chef's Hall" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">NOA Chef's Hall</h2>
-          <div class="-mt-1 flex">
-            <img src="img/rating.webp" alt="" class="mr-3 h-5" />
-            <h4 class="underline">68 reviews</h4>
+        <div
+          class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+        >
+          <figure>
+            <img src="img/barbarea.webp" alt="Barbarea restaurant" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Barbarea</h2>
+            <div class="-mt-1 flex">
+              <img src="img/rating.webp" alt="" class="mr-3 h-5" />
+              <h4 class="underline">720 reviews</h4>
+            </div>
+            <p>Italian · Casual</p>
+            <div class="card-actions justify-end">
+              <button
+                class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+              >
+                Book a table
+              </button>
+            </div>
           </div>
-          <p>International · Michelin</p>
-          <div class="card-actions justify-end">
-            <button
-              class="btn-primary btn border-none bg-primary hover:bg-blue-700"
-            >
-              Book a table
-            </button>
+        </div>
+
+        <div
+          class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+        >
+          <figure>
+            <img src="img/nch.webp" alt="Noa Chef's Hall" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">NOA Chef's Hall</h2>
+            <div class="-mt-1 flex">
+              <img src="img/rating.webp" alt="" class="mr-3 h-5" />
+              <h4 class="underline">68 reviews</h4>
+            </div>
+            <p>International · Michelin</p>
+            <div class="card-actions justify-end">
+              <button
+                class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+              >
+                Book a table
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -307,140 +309,398 @@
 
     <!-- End of most popular restaurants -->
 
-    <!-- Events section -->
+    <!-- Most popular restaurants - horizontal scroll mobile -->
 
-    <div class="mb-5 grid grid-cols-1 sm:mt-14 sm:grid-cols-2">
-      <h2 class="text-center md:ml-28 md:text-start">
-        Events and special offers
+    <div class="mt-5 pt-3 sm:hidden">
+      <h2 class="mt-5 text-center text-secondary">
+        Most popular restaurants in Tallinn
       </h2>
 
-      <p
-        class="link-hover link text-center font-bold text-primary md:mr-28 md:text-end"
-      >
-        View all events
+      <p class="link-hover link mb-5 text-center font-bold text-primary">
+        Browse restaurants
       </p>
+
+      <div class="wrappershort">
+        <div class="itemshort ml-10">
+          <div
+            class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+          >
+            <figure>
+              <img src="img/rudolf.webp" alt="Rudolf restaurant" class="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Rudolf restaurant</h2>
+              <div class="-mt-1 flex">
+                <img src="img/rating.webp" alt="" class="mr-3 h-5" />
+                <h4 class="underline">341 reviews</h4>
+              </div>
+              <p>French · Gourmet</p>
+              <div class="card-actions justify-end">
+                <button
+                  class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+                >
+                  Book a table
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="itemshort">
+          <div
+            class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+          >
+            <figure>
+              <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Mantel & Korsten</h2>
+              <div class="-mt-1 flex">
+                <img src="img/rating.webp" alt="" class="mr-3 h-5" />
+                <h4 class="underline">115 reviews</h4>
+              </div>
+              <p>Italian · Fine dining</p>
+              <div class="card-actions justify-end">
+                <button
+                  class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+                >
+                  Book a table
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="itemshort">
+          <div
+            class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+          >
+            <figure>
+              <img src="img/barbarea.webp" alt="Barbarea restaurant" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Barbarea</h2>
+              <div class="-mt-1 flex">
+                <img src="img/rating.webp" alt="" class="mr-3 h-5" />
+                <h4 class="underline">720 reviews</h4>
+              </div>
+              <p>Italian · Casual</p>
+              <div class="card-actions justify-end">
+                <button
+                  class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+                >
+                  Book a table
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="itemshort">
+          <div
+            class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+          >
+            <figure>
+              <img src="img/nch.webp" alt="Noa Chef's Hall" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">NOA Chef's Hall</h2>
+              <div class="-mt-1 flex">
+                <img src="img/rating.webp" alt="" class="mr-3 h-5" />
+                <h4 class="underline">68 reviews</h4>
+              </div>
+              <p>International · Michelin</p>
+              <div class="card-actions justify-end">
+                <button
+                  class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+                >
+                  Book a table
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!--End of Most popular restaurants - horizontal scroll mobile  -->
 
-    <div
-      class="grid sm:grid-cols-2 sm:gap-3 md:ml-28 md:mr-28 md:grid-cols-3 lg:ml-28 lg:mr-28 xl:grid-cols-4 2xl:grid-cols-4"
-    >
+    <!-- Events section -->
+    <div class="bg-primary sm:bg-background">
       <div
-        class="card card-compact flex w-72 justify-self-center bg-base-100 shadow-xl"
+        class="mb-5 mt-10 hidden grid-cols-1 sm:mt-14 sm:grid sm:grid-cols-2"
       >
-        <figure>
-          <img src="img/xmas.webp" alt="City Grill House christmas" class="" />
-        </figure>
-        <div class="card-body">
-          <h4>24.12.2022</h4>
-          <h2 class="card-title">Christmas dinner with City Grill House</h2>
-          <div class="-mt-1 flex">
-            <img src="img/cutlery.svg" alt="" class="" />
-            <p class="">5-course menu with wine</p>
-          </div>
+        <h2
+          class="text-center text-white sm:text-secondary md:ml-28 md:text-start"
+        >
+          Events and special offers
+        </h2>
 
-          <div class="-mt-1 flex">
-            <img src="img/ticket.svg" alt="" class="" />
-            <p class="">Tickets 50€, children 25€</p>
-          </div>
-          <div class="card-actions justify-end">
-            <button
-              class="btn-primary btn border-none bg-primary hover:bg-blue-700"
-            >
-              Buy ticket
-            </button>
-          </div>
-        </div>
+        <p
+          class="link-hover link text-center font-bold text-primary md:mr-28 md:text-end"
+        >
+          View all events
+        </p>
       </div>
 
       <div
-        class="card card-compact flex w-72 justify-self-center bg-base-100 shadow-xl"
+        class="hidden sm:grid sm:grid-cols-2 sm:gap-3 md:ml-28 md:mr-28 md:grid-cols-3 lg:ml-28 lg:mr-28 xl:grid-cols-4 2xl:grid-cols-4"
       >
-        <figure>
-          <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" />
-        </figure>
-        <div class="card-body">
-          <h4>31.12.2022</h4>
-          <h2 class="card-title">New Year's party at Nero restaurant</h2>
-          <div class="-mt-1 flex">
-            <img src="img/cutlery.svg" alt="" class="" />
-            <p class="">Rich buffet-dinner with welcome drink</p>
-          </div>
+        <div
+          class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+        >
+          <figure>
+            <img
+              src="img/xmas.webp"
+              alt="City Grill House christmas"
+              class=""
+            />
+          </figure>
+          <div class="card-body">
+            <h4>24.12.2022</h4>
+            <h2 class="card-title">Christmas dinner with City Grill House</h2>
+            <div class="-mt-1 flex">
+              <img src="img/cutlery.svg" alt="" class="" />
+              <p class="">5-course menu with wine</p>
+            </div>
 
-          <div class="-mt-1 flex">
-            <img src="img/ticket.svg" alt="" class="" />
-            <p class="">Tickets 95€, children 45€</p>
-          </div>
-
-          <div class="card-actions justify-end">
-            <button
-              class="btn-primary btn border-none bg-primary hover:bg-blue-700"
-            >
-              Buy ticket
-            </button>
+            <div class="-mt-1 flex">
+              <img src="img/ticket.svg" alt="" class="" />
+              <p class="">Tickets 50€, children 25€</p>
+            </div>
+            <div class="card-actions justify-end">
+              <button
+                class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+              >
+                Buy ticket
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div
-        class="card card-compact flex w-72 justify-self-center bg-base-100 shadow-xl"
-      >
-        <figure>
-          <img src="img/barbarea.webp" alt="Barbarea restaurant" />
-        </figure>
-        <div class="card-body">
-          <h4>ONGOING</h4>
-          <h2 class="card-title">Brewery tours at Põhjala Tap Room</h2>
-          <div class="-mt-1 flex">
-            <img src="img/cutlery.svg" alt="" class="" />
-            <p class="">45-minute tour with beer tasting</p>
-          </div>
+        <div
+          class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+        >
+          <figure>
+            <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" />
+          </figure>
+          <div class="card-body">
+            <h4>31.12.2022</h4>
+            <h2 class="card-title">New Year's party at Nero restaurant</h2>
+            <div class="-mt-1 flex">
+              <img src="img/cutlery.svg" alt="" class="" />
+              <p class="">Rich buffet-dinner with welcome drink</p>
+            </div>
 
-          <div class="-mt-1 flex">
-            <img src="img/ticket.svg" alt="" class="" />
-            <p class="">Tickets 14€</p>
-          </div>
+            <div class="-mt-1 flex">
+              <img src="img/ticket.svg" alt="" class="" />
+              <p class="">Tickets 95€, children 45€</p>
+            </div>
 
-          <div class="card-actions justify-end">
-            <button
-              class="btn-primary btn border-none bg-primary hover:bg-blue-700"
-            >
-              Buy ticket
-            </button>
+            <div class="card-actions justify-end">
+              <button
+                class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+              >
+                Buy ticket
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div
-        class="card card-compact flex w-72 justify-self-center bg-base-100 shadow-xl"
-      >
-        <figure>
-          <img src="img/nch.webp" alt="Noa Chef's Hall" />
-        </figure>
-        <div class="card-body">
-          <h4>31.12.2022</h4>
-          <h2 class="card-title">New Year's Eve at Peppersack</h2>
-          <div class="-mt-1 flex">
-            <img src="img/cutlery.svg" alt="" class="" />
-            <p class="">6-course dinner with welcome drink</p>
+        <div
+          class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+        >
+          <figure>
+            <img src="img/barbarea.webp" alt="Barbarea restaurant" />
+          </figure>
+          <div class="card-body">
+            <h4>ONGOING</h4>
+            <h2 class="card-title">Brewery tours at Põhjala Tap Room</h2>
+            <div class="-mt-1 flex">
+              <img src="img/cutlery.svg" alt="" class="" />
+              <p class="">45-minute tour with beer tasting</p>
+            </div>
+
+            <div class="-mt-1 flex">
+              <img src="img/ticket.svg" alt="" class="" />
+              <p class="">Tickets 14€</p>
+            </div>
+
+            <div class="card-actions justify-end">
+              <button
+                class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+              >
+                Buy ticket
+              </button>
+            </div>
           </div>
+        </div>
 
-          <div class="-mt-1 flex">
-            <img src="img/ticket.svg" alt="" class="" />
-            <p class="">Tickets 89€</p>
-          </div>
+        <div
+          class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+        >
+          <figure>
+            <img src="img/nch.webp" alt="Noa Chef's Hall" />
+          </figure>
+          <div class="card-body">
+            <h4>31.12.2022</h4>
+            <h2 class="card-title">New Year's Eve at Peppersack</h2>
+            <div class="-mt-1 flex">
+              <img src="img/cutlery.svg" alt="" class="" />
+              <p class="">6-course dinner with welcome drink</p>
+            </div>
 
-          <div class="card-actions justify-end">
-            <button
-              class="btn-primary btn border-none bg-primary hover:bg-blue-700"
-            >
-              Buy ticket
-            </button>
+            <div class="-mt-1 flex">
+              <img src="img/ticket.svg" alt="" class="" />
+              <p class="">Tickets 89€</p>
+            </div>
+
+            <div class="card-actions justify-end">
+              <button
+                class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+              >
+                Buy ticket
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- End of events section -->
+
+    <!-- Event section - horizontal scroll mobile -->
+
+    <div class="mt-5 bg-primary pt-3 sm:hidden">
+      <h2 class="mt-5 text-center text-white">Events and special offers</h2>
+
+      <p class="link-hover link mb-5 text-center font-bold text-white">
+        View all events
+      </p>
+
+      <div class="wrapper">
+        <div class="item ml-10">
+          <div
+            class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+          >
+            <figure>
+              <img
+                src="img/xmas.webp"
+                alt="City Grill House christmas"
+                class=""
+              />
+            </figure>
+            <div class="card-body">
+              <h4>24.12.2022</h4>
+              <h2 class="card-title">Christmas dinner with City Grill House</h2>
+              <div class="-mt-1 flex">
+                <img src="img/cutlery.svg" alt="" class="" />
+                <p class="">5-course menu with wine</p>
+              </div>
+
+              <div class="-mt-1 flex">
+                <img src="img/ticket.svg" alt="" class="" />
+                <p class="">Tickets 50€, children 25€</p>
+              </div>
+              <div class="card-actions justify-end">
+                <button
+                  class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+                >
+                  Buy ticket
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+          >
+            <figure>
+              <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" />
+            </figure>
+            <div class="card-body">
+              <h4>31.12.2022</h4>
+              <h2 class="card-title">New Year's party at Nero restaurant</h2>
+              <div class="-mt-1 flex">
+                <img src="img/cutlery.svg" alt="" class="" />
+                <p class="">Rich buffet-dinner with welcome drink</p>
+              </div>
+
+              <div class="-mt-1 flex">
+                <img src="img/ticket.svg" alt="" class="" />
+                <p class="">Tickets 95€, children 45€</p>
+              </div>
+
+              <div class="card-actions justify-end">
+                <button
+                  class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+                >
+                  Buy ticket
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+          >
+            <figure>
+              <img src="img/barbarea.webp" alt="Barbarea restaurant" />
+            </figure>
+            <div class="card-body">
+              <h4>ONGOING</h4>
+              <h2 class="card-title">Brewery tours at Põhjala Tap Room</h2>
+              <div class="-mt-1 flex">
+                <img src="img/cutlery.svg" alt="" class="" />
+                <p class="">45-minute tour with beer tasting</p>
+              </div>
+
+              <div class="-mt-1 flex">
+                <img src="img/ticket.svg" alt="" class="" />
+                <p class="">Tickets 14€</p>
+              </div>
+
+              <div class="card-actions justify-end">
+                <button
+                  class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+                >
+                  Buy ticket
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
+          >
+            <figure>
+              <img src="img/nch.webp" alt="Noa Chef's Hall" />
+            </figure>
+            <div class="card-body">
+              <h4>31.12.2022</h4>
+              <h2 class="card-title">New Year's Eve at Peppersack</h2>
+              <div class="-mt-1 flex">
+                <img src="img/cutlery.svg" alt="" class="" />
+                <p class="">6-course dinner with welcome drink</p>
+              </div>
+
+              <div class="-mt-1 flex">
+                <img src="img/ticket.svg" alt="" class="" />
+                <p class="">Tickets 89€</p>
+              </div>
+
+              <div class="card-actions justify-end">
+                <button
+                  class="btn-primary btn border-none bg-primary hover:bg-blue-700"
+                >
+                  Buy ticket
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Event section - horizontal scroll mobile  -->
 
     <h1>THIS IS A SITE</h1>
     <a href="filter.html">Filter page</a>

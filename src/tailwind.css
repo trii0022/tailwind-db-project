@@ -12,24 +12,24 @@
     @apply text-secondary;
   }
   h2 {
-    @apply text-lg;
+    @apply text-md;
     @apply font-montserrat;
     @apply text-secondary;
     @apply font-bold;
   }
 
   h3 {
-    @apply text-lg;
+    @apply text-md;
     @apply font-lato;
   }
   h4 {
-    @apply text-md;
+    @apply text-sm;
     @apply font-lato;
     @apply text-secondary;
   }
 
   p {
-    @apply text-md;
+    @apply text-sm;
     @apply font-lato;
     @apply text-secondary;
     @apply font-normal;
