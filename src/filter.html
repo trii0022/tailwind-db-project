@@ -6,25 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Starter Template</title>
     <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@200;300;700;800&display=swap"
       rel="stylesheet"
     />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <script type="module" src="index.js"></script>
 
-    <h1>THIS IS A filter page</h1>
+    <!-- Navbar start -->
+    <div class="lg:ml-10 lg:mr-10">
+      <div class="navbar">
+        <div class="flex-1">
+          <a href="/src/index.html" class="btn-ghost btn">
+            <img src="img/logo.png" alt="logo" class="w-44" />
+          </a>
+        </div>
+        <div class="hidden flex-none md:flex">
+          <ul class="menu menu-horizontal p-0">
+            <li>
+              <a href="/src/filter.html" class="text-md text-secondary"
+                >Browse restaurants</a
+              >
+            </li>
+            <a class="self-center text-md text-secondary">|</a>
+            <li><a class="text-primary">Sign up</a></li>
+            <li><a class="text-secondary">Log in</a></li>
+            <li tabindex="0">
+              <a>
+                EN
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="bg-base-100 p-2">
+                <li><a>EE</a></li>
+                <li><a>DK</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-    <a href="index.html">Index page</a>
-    <button class="btn">Button</button>
+        <div class="dropdown-end dropdown flex-none md:hidden">
+          <button class="btn-ghost btn-square btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-5 w-5 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          <ul
+            tabindex="0"
+            class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
+          >
+            <li><a>Browse restaurants</a></li>
+            <li><a class="text-primary">Sign up</a></li>
+            <li><a>Log in</a></li>
+            <li><a>Language</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar end -->
+
+    <!-- search -->
+
+    <h1 class="mb-5 text-center text-lg font-extrabold">Browse restaurants</h1>
+
+    <div class="grid grid-cols-8 gap-2">
+      <div class="form-control col-span-2 col-start-3">
+        <input
+          type="text"
+          placeholder="Type in cuisine or restaurant name"
+          class="input-bordered input"
+        />
+      </div>
+
+      <div class="form-control col-span-1 col-start-5">
+        <input
+          type="text"
+          placeholder="Location"
+          class="input-bordered input"
+        />
+      </div>
+
+      <a href="/src/filter.html" class="">
+        <div class="form-control">
+          <button
+            class="btn-primary btn border-none bg-primary hover:bg-blue-600"
+          >
+            Search
+          </button>
+        </div>
+      </a>
+    </div>
+
+    <!-- end of search -->
 
     <div>
       <div class="bg-white">
@@ -369,9 +466,7 @@
             <div
               class="flex items-baseline justify-between border-b border-gray-200 pt-24 pb-6"
             >
-              <h1 class="text-4xl font-bold tracking-tight text-blue-500">
-                Browse restaurants
-              </h1>
+              <h2>Browse restaurants</h2>
 
               <div class="flex items-center">
                 <div class="relative inline-block text-left">
@@ -759,11 +854,9 @@
                         />
                       </div>
                       <div class="col-span-3">
-                        <h2 class="mt-2 text-2xl font-semibold text-gray-800">
-                          Rudolf restaurant
-                        </h2>
-                        <p class="mt-2 text-xl text-gray-800">341 reviews</p>
-                        <p class="mt-2 text-xl italic text-gray-800">
+                        <h2 class="mt-2 text-secondary">Rudolf restaurant</h2>
+                        <p class="mt-2 text-secondary">341 reviews</p>
+                        <p class="mt-2 italic text-secondary">
                           Italian · Gourmet · Central Tallinn
                         </p>
                         2 Restaurant Rudolf resides on R. Tobiase 11-1 in
@@ -784,11 +877,9 @@
                         />
                       </div>
                       <div class="col-span-3">
-                        <h2 class="mt-2 text-2xl font-semibold text-gray-800">
-                          Mantel & Korsten
-                        </h2>
-                        <p class="mt-2 text-xl text-gray-800">341 reviews</p>
-                        <p class="mt-2 text-xl italic text-gray-800">
+                        <h2 class="mt-2 text-secondary">Mantel & Korsten</h2>
+                        <p class="mt-2 text-secondary">341 reviews</p>
+                        <p class="mt-2 italic text-secondary">
                           Italian · Fine dining · Central Tallinn
                         </p>
                         Mantel Ja Korsten is hidden away in Kadrioru and resides
