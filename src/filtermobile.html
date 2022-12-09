@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@200;300;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-primary pt-10 pb-10">
+    <div class="relative ml-10 mr-10 bg-white pt-10">
+      <div class="fixed top-8 left-0 right-0 bg-primary pt-4 pb-4">
+        <div class="ml-14 mr-14 grid grid-cols-2 gap-2">
+          <a href="/src/filter.html" class="">
+            <div class="form-control">
+              <button
+                class="btn-primary btn border-none bg-primary text-blackshade hover:bg-blue-600"
+              >
+                Reset
+              </button>
+            </div>
+          </a>
+
+          <a href="/src/filter.html" class="">
+            <div class="form-control">
+              <button
+                class="btn-primary btn border-none bg-white text-primary hover:bg-blue-600"
+              >
+                Apply
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="m-4 ml-10 block rounded-lg bg-white">
+        <h3 class="sr-only">Categories</h3>
+
+        <div class="border-b border-blackshade py-6">
+          <h3 class="-my-3 flow-root">
+            <!-- Expand/collapse section button -->
+            <button
+              type="button"
+              class="flex w-full items-center justify-between py-3 text-sm text-gray-400 hover:text-gray-500"
+              aria-controls="filter-section-0"
+              aria-expanded="false"
+            >
+              <span class="font-semibold text-blackshade">Cuisine</span>
+            </button>
+          </h3>
+          <!-- Filter section, show/hide based on section state. -->
+          <div class="pt-6" id="filter-section-0">
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <input
+                  id="filter-color-0"
+                  name="color[]"
+                  value="italian"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label for="filter-color-0" class="ml-3 text-sm text-gray-600"
+                  >Italian</label
+                >
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  id="filter-color-1"
+                  name="color[]"
+                  value="french"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label for="filter-color-1" class="ml-3 text-sm text-gray-600"
+                  >French</label
+                >
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  id="filter-color-2"
+                  name="color[]"
+                  value="scandinavian"
+                  type="checkbox"
+                  checked
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label for="filter-color-2" class="ml-3 text-sm text-gray-600"
+                  >Scandinavian</label
+                >
+              </div>
+
+              <div class="collapse">
+                <input type="checkbox" />
+                <div class="collapse-title -z-0 font-medium">+ See more</div>
+                <div class="collapse-content">
+                  <div class="flex items-center">
+                    <input
+                      id="filter-color-3"
+                      name="color[]"
+                      value="asian"
+                      type="checkbox"
+                      class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                    />
+                    <label
+                      for="filter-color-3"
+                      class="ml-3 text-sm text-gray-600"
+                      >Asian</label
+                    >
+                  </div>
+
+                  <div class="flex items-center">
+                    <input
+                      id="filter-color-4"
+                      name="color[]"
+                      value="slavic"
+                      type="checkbox"
+                      class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                    />
+                    <label
+                      for="filter-color-4"
+                      class="ml-3 text-sm text-gray-600"
+                      >Slavic</label
+                    >
+                  </div>
+
+                  <div class="flex items-center">
+                    <input
+                      id="filter-color-5"
+                      name="color[]"
+                      value="local"
+                      type="checkbox"
+                      class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                    />
+                    <label
+                      for="filter-color-5"
+                      class="ml-3 text-sm text-gray-600"
+                      >Local</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-b border-blackshade py-6">
+          <h3 class="-my-3 flow-root">
+            <!-- Expand/collapse section button -->
+            <button
+              type="button"
+              class="flex w-full items-center justify-between py-3 text-sm text-gray-400 hover:text-gray-500"
+              aria-controls="filter-section-1"
+              aria-expanded="false"
+            >
+              <span class="font-semibold text-blackshade"
+                >Type of restaurant</span
+              >
+            </button>
+          </h3>
+          <!-- Filter section, show/hide based on section state. -->
+          <div class="pt-6" id="filter-section-1">
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <input
+                  id="filter-category-0"
+                  name="category[]"
+                  value="casual"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label
+                  for="filter-category-0"
+                  class="ml-3 text-sm text-gray-600"
+                  >Casual</label
+                >
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  id="filter-category-1"
+                  name="category[]"
+                  value="gourmet"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label
+                  for="filter-category-1"
+                  class="ml-3 text-sm text-gray-600"
+                  >Gourmet</label
+                >
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  id="filter-category-2"
+                  name="category[]"
+                  value="finedining"
+                  type="checkbox"
+                  checked
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label
+                  for="filter-category-2"
+                  class="ml-3 text-sm text-gray-600"
+                  >Fine dining</label
+                >
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  id="filter-category-3"
+                  name="category[]"
+                  value="cafe"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label
+                  for="filter-category-3"
+                  class="ml-3 text-sm text-gray-600"
+                  >Cafe</label
+                >
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  id="filter-category-4"
+                  name="category[]"
+                  value="barcocktails"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label
+                  for="filter-category-4"
+                  class="ml-3 text-sm text-gray-600"
+                  >Bar/cocktails</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-b border-blackshade py-6">
+          <h3 class="-my-3 flow-root">
+            <!-- Expand/collapse section button -->
+            <button
+              type="button"
+              class="flex w-full items-center justify-between py-3 text-sm text-gray-400 hover:text-gray-500"
+              aria-controls="filter-section-2"
+              aria-expanded="false"
+            >
+              <span class="font-semibold text-blackshade">Seating option</span>
+            </button>
+          </h3>
+          <!-- Filter section, show/hide based on section state. -->
+          <div class="pt-6" id="filter-section-2">
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <input
+                  id="filter-size-0"
+                  name="size[]"
+                  value="standard"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label for="filter-size-0" class="ml-3 text-sm text-gray-600"
+                  >Standard</label
+                >
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  id="filter-size-1"
+                  name="size[]"
+                  value="terrace"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label for="filter-size-1" class="ml-3 text-sm text-gray-600"
+                  >Terrace</label
+                >
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  id="filter-size-2"
+                  name="size[]"
+                  value="bar"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label for="filter-size-2" class="ml-3 text-sm text-gray-600"
+                  >Bar</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="ml-5 mr-5 grid grid-cols-2 gap-2 pb-5">
+        <a href="/src/filter.html" class="">
+          <div class="form-control">
+            <button
+              class="btn-primary btn border-none bg-white text-blackshade hover:bg-blue-600"
+            >
+              Reset
+            </button>
+          </div>
+        </a>
+
+        <a href="/src/filter.html" class="">
+          <div class="form-control">
+            <button
+              class="btn-primary btn border-none bg-primary text-white hover:bg-blue-600"
+            >
+              Apply
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
