@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Starter Template</title>
+    <title>Rudolf restaurant</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="img/db_logo.webp" />
     <link rel="stylesheet" href="tailwind.css" />
 
     <link rel="stylesheet" href="style.css" />
@@ -92,8 +94,21 @@
 
     <!-- main section -->
 
+    
+
     <div class="grid grid-cols-8 gap-2 md:ml-28">
+
+   
+
       <div class="col-span-6 col-start-2 md:col-span-4">
+
+        <div class="text-sm breadcrumbs  mb-5">
+          <ul>
+            <li class="text-primary"><a href="/src/index.html">Home</a></li> 
+            <li class="text-primary"><a href="/src/filter.html">Restaurants</a></li> 
+            <li>Rudolf restaurant</li>
+          </ul>
+        </div>
         <img
           src="img/rudolf.webp"
           alt="Rudolf"
@@ -250,7 +265,7 @@
     
       <div class=" col-span-1 col-start-2 md:ml-24 md:col-start-5 md:mt-0 -mt-10  ">
         <div
-          class="grid-content card mt-14 mb-14 w-full flex-shrink-0 bg-base-100 pt-5 pb-5 shadow-2xl  md:fixed  "
+          class="grid-content card mt-14 mb-14  w-full flex-shrink-0 bg-base-100 pt-5 pb-5 shadow-2xl  md:fixed  "
         >
           <div class="card-body">
             <h1 class="text-lg font-semibold"> Book a table at <span class="text-primary">Rudolf restaurant </span> </h1>
@@ -435,5 +450,71 @@
 <!-- end of guest reviews mobile view bottom -->
 
     <!-- end of main section -->
+
+       <!-- Footer -->
+       <footer
+       class="footer bg-base-200 pt-10 pb-10 pl-10 text-base-content sm:mt-16 sm:pl-28"
+     >
+       <div>
+         <img src="/src/img/logo.png" alt="logo" class="w-40" />
+         <p>DinnerBooking</p>
+         <p>Lyongade 21, 1.</p>
+         <p>2300 København S</p>
+       </div>
+       <div>
+         <span class="font-semibold uppercase text-primary">General</span>
+         <a class="link-hover link">About us</a>
+         <a class="link-hover link">Press</a>
+         <a class="link-hover link">Contact</a>
+       </div>
+       <div>
+         <span class="font-semibold uppercase text-primary">Legal</span>
+         <a class="link-hover link">Privacy</a>
+         <a class="link-hover link">Terms of Use</a>
+       </div>
+       <div>
+         <span class="font-semibold uppercase text-primary"
+           >For restaurants</span
+         >
+         <a class="link-hover link">Business site</a>
+         <a class="link-hover link">Start TeamViewer</a>
+         <a class="link-hover link">System status</a>
+       </div>
+       <div>
+         <span class="font-semibold uppercase text-primary">Newsletter</span>
+         <div class="form-control w-80">
+           <label class="label">
+             <span class="label-text"
+               >Sign up for our newsletter to get the latest restaurant
+               news</span
+             >
+           </label>
+           <div class="relative">
+             <input
+               type="text"
+               placeholder="username@email.com"
+               class="input-bordered input w-full pr-16"
+             />
+             <button
+               class="btn-primary btn absolute top-0 right-0 rounded-l-none border-none bg-primary hover:bg-tertiary"
+             >
+               Subscribe
+             </button>
+           </div>
+         </div>
+ 
+         <span class="mt-5 font-semibold uppercase text-primary">Follow us</span>
+ 
+         <div class="flex gap-2">
+           <img src="img/instagram.svg" alt="Instagram icon" />
+           <img src="img/facebook.svg" alt="Facebook icon" />
+           <img src="img/twitter.svg" alt="Twitter icon" />
+         </div>
+       </div>
+     </footer>
+ 
+     <!-- End of footer -->
   </body>
+
+
 </html>
