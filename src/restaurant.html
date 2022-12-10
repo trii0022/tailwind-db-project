@@ -172,7 +172,7 @@
 
         <!-- guest reviews -->
 
-        <div class="hidden sm:grid">
+        <div class="hidden md:grid">
 
         <h2 class="mt-10 text-start">Guest reviews</h2>
 
@@ -248,12 +248,13 @@
     <!-- Book a table card -->
 
     
-      <div class=" col-span-1 col-start-2 sm:ml-9 sm:col-start-5 sm:mt-0 -mt-10 ">
+      <div class=" col-span-1 col-start-2 md:ml-24 md:col-start-5 md:mt-0 -mt-10  ">
         <div
-          class="relative sm:fixed grid-content card mt-14 mb-14 w-full flex-shrink-0 bg-base-100 pt-5 pb-5 shadow-2xl"
+          class="grid-content card mt-14 mb-14 w-full flex-shrink-0 bg-base-100 pt-5 pb-5 shadow-2xl  md:fixed  "
         >
           <div class="card-body">
-            <h1 class="text-lg font-semibold">Rudolf restaurant</h1>
+            <h1 class="text-lg font-semibold"> Book a table at <span class="text-primary">Rudolf restaurant </span> </h1>
+          
             <p>Address: Rudolfi 14, Tallinn, 74001</p>
 
             <div class="grid grid-flow-col">
@@ -325,10 +326,10 @@
            
             </div>
 
-            <a href="/src/filter.html">
+            <a href="/src/booking.html">
                 <div class="form-control mt-10">
                   <button
-                    class="btn-primary btn border-none bg-primary hover:bg-blue-600"
+                    class="btn-primary btn border-none bg-primary hover:bg-tertiary"
                   >
                     Book a table
                   </button>
@@ -354,9 +355,14 @@
     </div>
 
   <!-- Guest reviews mobile view bottom -->
-    <div class="sm:hidden grid ml-20 mr-10">
+    <div class="md:hidden grid  grid-cols-8 col-start-2 col-span-6 ">
 
-        <h2 class="mt-10 text-start">Guest reviews</h2>
+        
+
+
+<div class="grid-cols-8 col-start-2 col-span-6">
+
+  <h2 class="mt-10 text-start">Guest reviews</h2>
 
    <div class="pt-5 pb-5 rounded-xl bg-white mt-5 pr-2">
 
@@ -420,6 +426,8 @@
         <p class="text-primary">+ see full review</p>
 
     </div>
+</div>
+
 </div>
 
 </div>

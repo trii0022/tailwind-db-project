@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Starter Template</title>
+    <link rel="stylesheet" href="tailwind.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@200;300;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="pb-32">
+    <script type="module" src="index.js"></script>
+
+    <!-- Navbar start -->
+    <div class="lg:ml-10 lg:mr-10">
+      <div class="navbar">
+        <div class="flex-1">
+          <a href="/src/index.html" class="btn-ghost btn">
+            <img src="img/logo.png" alt="logo" class="w-44" />
+          </a>
+        </div>
+        <div class="hidden flex-none md:flex">
+          <ul class="menu menu-horizontal p-0">
+            <li>
+              <a href="/src/filter.html" class="text-md text-secondary"
+                >Browse restaurants</a
+              >
+            </li>
+            <a class="self-center text-md text-secondary">|</a>
+            <li><a class="text-primary">Sign up</a></li>
+            <li><a class="text-secondary">Log in</a></li>
+            <li tabindex="0">
+              <a>
+                EN
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="bg-base-100 p-2">
+                <li><a>EE</a></li>
+                <li><a>DK</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dropdown-end dropdown flex-none md:hidden">
+          <button class="btn-ghost btn-square btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-5 w-5 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          <ul
+            tabindex="0"
+            class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
+          >
+            <li><a href="/src/filter.html">Browse restaurants</a></li>
+            <li><a class="text-primary">Sign up</a></li>
+            <li><a>Log in</a></li>
+            <li><a>Language</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar end -->
+
+    <!-- Complete booking card -->
+
+    <div class="grid h-screen place-items-center md:hidden">
+      <div
+        class="grid-content card mt-14 mb-14 w-full flex-shrink-0 bg-base-100 pt-5 pb-5 shadow-2xl"
+      >
+        <div class="card-body">
+          <h1 class="mb-3 text-center text-lg font-extrabold">
+            Thank you! Your booking is completed.
+          </h1>
+
+          <p class="mb-3 text-center">
+            We have sent you an email confirmation with the booking details.
+          </p>
+
+          <p class="text-center font-semibold text-primary">
+            Rudolf restaurant
+          </p>
+          <p class="text-center font-semibold text-primary">
+            22 Dec 2022 at 18:00
+          </p>
+          <p class="text-center font-semibold text-primary">For 2 guests</p>
+
+          <p class="mt-5 text-center">
+            If you didn't receive a confirmation email, please contact us on
+            <span class="underline">support@dinnerbooking.com</span>.
+          </p>
+
+          <p class="mt-5 text-center">
+            Hungry for more? Browse other restaurants:
+          </p>
+
+          <a href="/src/filter.html">
+            <div class="form-control mt-5">
+              <button
+                class="btn-primary btn border-none bg-primary hover:bg-tertiary"
+              >
+                Browse restaurants
+              </button>
+            </div>
+          </a>
+
+          <p class="mt-6 text-xs">
+            *You can use collected points to buy tickets to special offers and
+            events. <span class="text-primary">Learn more</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Complete booking card -->
+
+    <!-- Complete booking card big screen version -->
+
+    <div class="hidden h-screen grid-cols-4 place-items-center md:grid">
+      <div
+        class="card col-span-2 col-start-2 mt-14 mb-14 w-full flex-shrink-0 bg-base-100 pl-10 pr-10 pt-5 pb-5 shadow-2xl"
+      >
+        <div class="card-body">
+          <h1 class="mb-3 text-center text-lg font-extrabold">
+            Thank you! Your booking is completed.
+          </h1>
+
+          <p class="mb-3 text-center">
+            We have sent you an email confirmation with the booking details.
+          </p>
+
+          <p class="text-center font-semibold text-primary">
+            Rudolf restaurant
+          </p>
+          <p class="text-center font-semibold text-primary">
+            22 Dec 2022 at 18:00
+          </p>
+          <p class="text-center font-semibold text-primary">For 2 guests</p>
+
+          <p class="mt-5 text-center">
+            If you didn't receive a confirmation email, please contact us on
+            <span class="underline">support@dinnerbooking.com</span>.
+          </p>
+
+          <p class="mt-5 text-center">
+            Hungry for more? Browse other restaurants:
+          </p>
+
+          <a href="/src/filter.html">
+            <div class="form-control mt-1">
+              <button
+                class="btn-primary btn border-none bg-primary hover:bg-tertiary"
+              >
+                Browse restaurants
+              </button>
+            </div>
+          </a>
+
+          <p class="mt-6 text-xs">
+            *You can use collected points to buy tickets to special offers and
+            events. <span class="text-primary">Learn more</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Complete booking card big screen version-->
+  </body>
+</html>

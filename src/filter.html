@@ -95,8 +95,8 @@
       Browse restaurants
     </h1>
 
-    <div class="grid grid-cols-8 gap-2">
-      <div class="form-control col-span-2 col-start-3">
+    <div class="mx-10 gap-2 sm:mx-0 sm:grid sm:grid-cols-8">
+      <div class="form-control col-span-2 col-start-3 mb-2">
         <input
           type="text"
           placeholder="Type in cuisine or restaurant name"
@@ -104,7 +104,7 @@
         />
       </div>
 
-      <div class="form-control col-span-1 col-start-5">
+      <div class="form-control col-span-1 col-start-5 mb-2">
         <input
           type="text"
           placeholder="Location"
@@ -115,7 +115,7 @@
       <a href="/src/filter.html" class="">
         <div class="form-control">
           <button
-            class="btn-primary btn border-none bg-primary hover:bg-blue-600"
+            class="btn-primary btn border-none bg-primary hover:bg-tertiary"
           >
             Search
           </button>
@@ -474,10 +474,10 @@
             </div>
           </div>
 
-          <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <main class="mx-5 max-w-7xl px-4 sm:px-6 lg:px-8">
             <!-- test showing all restaurants and sort section -->
 
-            <div class="mt-20 grid grid-cols-4 gap-8 lg:grid-cols-8">
+            <div class="mt-20 grid grid-cols-4 sm:gap-8 lg:grid-cols-8">
               <div class="col-span-5 col-start-1 self-center lg:col-start-3">
                 <h2 class="font-semibold">
                   Showing <span class="text-primary">all restaurants</span>
@@ -513,16 +513,16 @@
                 </div>
               </div>
 
-              <div class="flex lg:hidden">
-                <a href="filtermobile.html">
+              <a href="filtermobile.html">
+                <div class="flex lg:hidden">
                   <button
-                    class="btn-primary btn border-blackshade bg-background text-blackshade hover:bg-blue-600"
+                    class="btn-primary btn border-blackshade bg-background text-blackshade hover:border-none hover:bg-tertiary hover:text-white"
                   >
-                    <img src="img/slider.svg" alt="filter" />
+                    <img src="img/slider.svg" alt="filter" class="mr-1" />
                     Filter
-                  </button></a
-                >
-              </div>
+                  </button>
+                </div></a
+              >
             </div>
 
             <!-- end test showing all restaurants and sort section -->
@@ -823,32 +823,39 @@
                   <div class="rounded-lg border-gray-200">
                     <div class="mb-5 grid grid-flow-col rounded-xl bg-white">
                       <div class="col-span-1 mr-3">
-                        <img
-                          class="h-full w-full rounded-l-lg object-cover"
-                          src="img/rudolf.webp"
-                          alt="Rudolf"
-                          role="img"
-                        />
+                        <a href="restaurant.html">
+                          <img
+                            class="h-full w-full rounded-l-lg object-cover"
+                            src="img/rudolf.webp"
+                            alt="Rudolf"
+                            href="restaurant.html"
+                        /></a>
                       </div>
 
                       <div class="col-span-2 mr-3 ml-3 mb-3">
-                        <h2 class="mt-2 text-secondary">Rudolf restaurant</h2>
+                        <a href="restaurant.html">
+                          <h2 class="mt-2 text-secondary">Rudolf restaurant</h2>
 
-                        <div class="mt-1 flex text-secondary">
-                          <img src="img/rating.webp" alt="" class="mr-3 h-5" />
-                          <h4 class="underline">341 reviews</h4>
-                        </div>
-                        <p class="italic text-secondary">
-                          Italian · Gourmet · Central Tallinn
-                        </p>
+                          <div class="mt-1 flex text-secondary">
+                            <img
+                              src="img/rating.webp"
+                              alt=""
+                              class="mr-3 h-5"
+                            />
+                            <h4 class="underline">341 reviews</h4>
+                          </div>
+                          <p class="italic text-secondary">
+                            Italian · Gourmet · Tallinn
+                          </p>
 
-                        <p class="mt-2 mr-3">
-                          2 Restaurant Rudolf resides on R. Tobiase 11-1 in
-                          Tallinn. The restaurant is close to many attractions
-                          such as Anton Hansen Tammsaare Museum, Kadriorg Park
-                          and Kadriorg Carousel. In the forefront of Rudolf
-                          restaurant stand two...
-                        </p>
+                          <p class="mt-2 mr-3 hidden sm:grid">
+                            Restaurant Rudolf resides on R. Tobiase 11-1 in
+                            Tallinn. The restaurant is close to many attractions
+                            such as Anton Hansen Tammsaare Museum, Kadriorg Park
+                            and Kadriorg Carousel. In the forefront of Rudolf
+                            restaurant stand two...
+                          </p></a
+                        >
                       </div>
 
                       <div
@@ -856,7 +863,7 @@
                       >
                         <a href="restaurant.html">
                           <button
-                            class="btn-primary btn border-none bg-primary"
+                            class="btn-primary btn border-none bg-primary hover:bg-tertiary"
                           >
                             Book
                           </button>
@@ -866,118 +873,151 @@
 
                     <div class="mb-5 grid grid-flow-col rounded-xl bg-white">
                       <div class="col-span-1 mr-3">
-                        <img
-                          class="h-full w-full rounded-l-lg object-cover"
-                          src="img/mantel.webp"
-                          alt="Mantel"
-                          role="img"
-                        />
+                        <a href="restaurant.html">
+                          <img
+                            class="h-full w-full rounded-l-lg object-cover"
+                            src="img/mantel.webp"
+                            alt="Mantel"
+                            role="img"
+                        /></a>
                       </div>
 
                       <div class="col-span-2 mr-3 ml-3 mb-3">
-                        <h2 class="mt-2 text-secondary">Mantel ja Korsten</h2>
+                        <a href="restaurant.html">
+                          <h2 class="mt-2 text-secondary">Mantel ja Korsten</h2>
 
-                        <div class="mt-1 flex text-secondary">
-                          <img src="img/rating.webp" alt="" class="mr-3 h-5" />
-                          <h4 class="underline">115 reviews</h4>
-                        </div>
-                        <p class="italic text-secondary">
-                          Italian · Gourmet · Central Tallinn
-                        </p>
+                          <div class="mt-1 flex text-secondary">
+                            <img
+                              src="img/rating.webp"
+                              alt=""
+                              class="mr-3 h-5"
+                            />
+                            <h4 class="underline">115 reviews</h4>
+                          </div>
+                          <p class="italic text-secondary">
+                            Italian · Gourmet · Tallinn
+                          </p>
 
-                        <p class="mt-2 mr-3">
-                          Mantel Ja Korsten is perfect for both lunch and
-                          dinner, where one can enjoy the Mediterranean-inspired
-                          dishes developed by head chef Jüri Vainküla. The menu
-                          offers intriguing dishes such as swordfish with
-                          passion fruit dressing...
-                        </p>
+                          <p class="mt-2 mr-3 hidden sm:grid">
+                            Mantel Ja Korsten is perfect for both lunch and
+                            dinner, where one can enjoy the
+                            Mediterranean-inspired dishes developed by head chef
+                            Jüri Vainküla. The menu offers intriguing dishes
+                            such as swordfish with passion fruit dressing...
+                          </p></a
+                        >
                       </div>
 
                       <div
                         class="col-span-1 mb-3 mr-3 flex items-end justify-end"
                       >
-                        <button class="btn-primary btn border-none bg-primary">
-                          Book
-                        </button>
+                        <a href="restaurant.html">
+                          <button
+                            class="btn-primary btn border-none bg-primary hover:bg-tertiary"
+                          >
+                            Book
+                          </button>
+                        </a>
                       </div>
                     </div>
 
                     <div class="mb-5 grid grid-flow-col rounded-xl bg-white">
                       <div class="col-span-1 mr-3">
-                        <img
-                          class="h-full w-full rounded-l-lg object-cover"
-                          src="img/barbarea.webp"
-                          alt="Barbarea"
-                          role="img"
-                        />
+                        <a href="restaurant.html">
+                          <img
+                            class="h-full w-full rounded-l-lg object-cover"
+                            src="img/barbarea.webp"
+                            alt="Barbarea"
+                            role="img"
+                        /></a>
                       </div>
 
                       <div class="col-span-2 mr-3 ml-3 mb-3">
-                        <h2 class="mt-2 text-secondary">Barbarea</h2>
+                        <a href="restaurant.html">
+                          <h2 class="mt-2 text-secondary">Barbarea</h2>
 
-                        <div class="mt-1 flex text-secondary">
-                          <img src="img/rating.webp" alt="" class="mr-3 h-5" />
-                          <h4 class="underline">720 reviews</h4>
-                        </div>
-                        <p class="italic text-secondary">
-                          Italian · Casual · Central Tallinn
-                        </p>
+                          <div class="mt-1 flex text-secondary">
+                            <img
+                              src="img/rating.webp"
+                              alt=""
+                              class="mr-3 h-5"
+                            />
+                            <h4 class="underline">720 reviews</h4>
+                          </div>
+                          <p class="italic text-secondary">
+                            Italian · Casual · Tallinn
+                          </p>
 
-                        <p class="mt-2 mr-3">
-                          Barbarea is a restaurant and a natural wine bar in
-                          Kopli which opens its doors for the evening after
-                          Karjase sai bakery closes its doors in the
-                          afternoon.The menu’s inspiration is gathered from
-                          different parts of the world and...
-                        </p>
+                          <p class="mt-2 mr-3 hidden sm:grid">
+                            Barbarea is a restaurant and a natural wine bar in
+                            Kopli which opens its doors for the evening after
+                            Karjase sai bakery closes its doors in the
+                            afternoon.The menu’s inspiration is gathered from
+                            different parts of the world and...
+                          </p></a
+                        >
                       </div>
 
                       <div
                         class="col-span-1 mb-3 mr-3 flex items-end justify-end"
                       >
-                        <button class="btn-primary btn border-none bg-primary">
-                          Book
-                        </button>
+                        <a href="restaurant.html">
+                          <button
+                            class="btn-primary btn border-none bg-primary hover:bg-tertiary"
+                          >
+                            Book
+                          </button>
+                        </a>
                       </div>
                     </div>
 
                     <div class="mb-5 grid grid-flow-col rounded-xl bg-white">
                       <div class="col-span-1 mr-3">
-                        <img
-                          class="h-full w-full rounded-l-lg object-cover"
-                          src="img/nch.webp"
-                          alt="Noa Chef's Hall"
-                          role="img"
-                        />
+                        <a href="restaurant.html">
+                          <img
+                            class="h-full w-full rounded-l-lg object-cover"
+                            src="img/nch.webp"
+                            alt="Noa Chef's Hall"
+                            role="img"
+                        /></a>
                       </div>
 
                       <div class="col-span-2 mr-3 ml-3 mb-3">
-                        <h2 class="mt-2 text-secondary">NOA Chef's Hall</h2>
+                        <a href="restaurant.html">
+                          <h2 class="mt-2 text-secondary">NOA Chef's Hall</h2>
 
-                        <div class="mt-1 flex text-secondary">
-                          <img src="img/rating.webp" alt="" class="mr-3 h-5" />
-                          <h4 class="underline">68 reviews</h4>
-                        </div>
-                        <p class="italic text-secondary">
-                          Internatioanl · Michelin · Central Tallinn
-                        </p>
+                          <div class="mt-1 flex text-secondary">
+                            <img
+                              src="img/rating.webp"
+                              alt=""
+                              class="mr-3 h-5"
+                            />
+                            <h4 class="underline">68 reviews</h4>
+                          </div>
+                          <p class="italic text-secondary">
+                            International · Michelin · Tallinn
+                          </p>
 
-                        <p class="mt-2 mr-3">
-                          Extraordinary from start to finish, demanding your
-                          full attention. Even the smallest details are custom
-                          made, and our staff hand-picked from ultimate
-                          professionals. Simply promising to deliver you an
-                          immersive and unforgettable...
-                        </p>
+                          <p class="mt-2 mr-3 hidden sm:grid">
+                            Extraordinary from start to finish, demanding your
+                            full attention. Even the smallest details are custom
+                            made, and our staff hand-picked from ultimate
+                            professionals. Simply promising to deliver you an
+                            immersive and unforgettable...
+                          </p></a
+                        >
                       </div>
 
                       <div
                         class="col-span-1 mb-3 mr-3 flex items-end justify-end"
                       >
-                        <button class="btn-primary btn border-none bg-primary">
-                          Book
-                        </button>
+                        <a href="restaurant.html">
+                          <button
+                            class="btn-primary btn border-none bg-primary hover:bg-tertiary"
+                          >
+                            Book
+                          </button>
+                        </a>
                       </div>
                     </div>
                   </div>

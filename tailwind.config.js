@@ -18,6 +18,7 @@ module.exports = {
         secondary: "#45473B",
         background: "#DBEAFE",
         blackshade: "#272725",
+        tertiary: "#2d86d5",
       },
 
       fontSize: {
