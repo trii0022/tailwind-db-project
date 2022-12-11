@@ -17,6 +17,18 @@
       rel="stylesheet"
     />
   </head>
+
+  <input type="checkbox" id="my-modal" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Restaurant Rudolf menu</h3>
+    <p class="py-4"></p>
+    <img src="img/menurudolf.webp" alt="Rudolf menu">
+    <div class="modal-action">
+      <label for="my-modal" class="btn">Close</label>
+    </div>
+  </div>
+</div>
   <body>
     <script type="module" src="index.js"></script>
 
@@ -325,14 +337,14 @@
             <div class="custom-number-input input-bordered input">
                 
                 <div class=" flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
-                  <button data-action="decrement" class="  text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full  rounded-l cursor-pointer outline-none">
-                    <span class="h-full text-2xl font-normal flex items-center text-center pl-10">−</span>
+                  <button data-action="decrement" class="  text-secondary hover:text-blackshade hover:bg-primary h-full  rounded-l cursor-pointer outline-none">
+                    <span class="h-full text-2xl font-normal flex items-center text-center pl-10">-</span>
                   </button>
-                 <input type="number" max="8" class="outline-none focus:outline-none text-center w-full  font-medium text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none pl-12" name="custom-input-number" value="0"></input><span class="font-medium text-md text-gray-700  text-center flex items-center pr-12"> guests</span>
-                <button data-action="increment" class=" text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+                <input type="number" class="focus:outline-none text-center w-full  font-medium text-md hover:text-secondary focus:text-blackshade  md:text-basecursor-default flex items-center text-secondary  outline-none pl-12" name="custom-input-number" value="0"></input><span class="font-medium text-md text-secondary  text-center flex items-center pr-12"> guests</span>
+                <button data-action="increment" class=" text-secondary hover:text-blackshade hover:bg-primary h-full w-20 rounded-r cursor-pointer">
                   <span class="pr-10 h-full  flex items-center text-center text-2xl font-normal">+</span>
                 </button>
-              </div>
+               </div>
 
             
 
@@ -353,11 +365,39 @@
 
         
           </div>
+
+        
         </div>
+
+
+        <!-- Additional details -->
+        <div class="md:pt-32 md:mt-96 md:fixed hidden md:grid">
+
+       
+        <h2 class="mb-3">Additional details</h2> 
+        
+        <div class="flex">
+          <img src="img/restaurant.svg" alt="cutlery icon" class="mr-1 mb-2">
+       
+          <label for="my-modal" class="font-semibold font-lato text-secondary ">See menu</label>
+        </div>
+
+        <div class="flex">
+          <img src="img/ticket.svg" alt="ticket" class="w-6 mr-1">
+          <p class="font-semibold ">See special offers</p>
+         
+        </div>
+      
+      
+      </div>
+
+      <!-- End of additional details -->
+
+ 
       </div>
    
 
-      <!-- End of book a table card -->
+      <!-- End of book a table section -->
 
 
 
@@ -368,6 +408,29 @@
 
 
     </div>
+
+    <!-- Additional details mobile view -->
+
+    <div class="md:hidden grid  grid-cols-8 ">
+
+      
+      <h2 class="mb-3 col-start-2 col-span-8">Additional details</h2> 
+
+     
+      <div class="flex col-start-2 col-span-3">
+        <img src="img/restaurant.svg" alt="cutlery icon" class="mr-1 mb-2">
+        <p class="font-semibold">See menu</p>
+      </div>
+
+      <div class="flex col-start-5 col-span-3">
+        <img src="img/ticket.svg" alt="ticket" class="w-6 mr-1">
+        <p class="font-semibold">See special offers</p>
+      </div>
+    
+    
+    </div>
+
+    <!-- End of Additional details mobile view -->
 
   <!-- Guest reviews mobile view bottom -->
     <div class="md:hidden grid  grid-cols-8 col-start-2 col-span-6 ">
