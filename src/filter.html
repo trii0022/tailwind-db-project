@@ -24,7 +24,7 @@
       <div class="navbar">
         <div class="flex-1">
           <a href="/src/index.html" class="btn-ghost btn">
-            <img src="img/logo.png" alt="logo" class="w-44" />
+            <img src="img/logo.webp" alt="logo" />
           </a>
         </div>
         <div class="hidden flex-none md:flex">
@@ -135,351 +135,11 @@
 
       Off-canvas filters for mobile, show/hide based on off-canvas filters state.
     -->
-          <div class="relative z-40 hidden" role="dialog" aria-modal="true">
-            <!--
-        Off-canvas menu backdrop, show/hide based on off-canvas menu state.
-
-        Entering: "transition-opacity ease-linear duration-300"
-          From: "opacity-0"
-          To: "opacity-100"
-        Leaving: "transition-opacity ease-linear duration-300"
-          From: "opacity-100"
-          To: "opacity-0"
-      -->
-            <div class="fixed inset-0 bg-black bg-opacity-25"></div>
-
-            <div class="fixed inset-0 z-40 flex">
-              <!--
-          Off-canvas menu, show/hide based on off-canvas menu state.
-
-          Entering: "transition ease-in-out duration-300 transform"
-            From: "translate-x-full"
-            To: "translate-x-0"
-          Leaving: "transition ease-in-out duration-300 transform"
-            From: "translate-x-0"
-            To: "translate-x-full"
-        -->
-              <div
-                class="relative ml-auto h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl"
-              >
-                <div class="flex items-center justify-between px-4">
-                  <h2 class="text-lg font-medium text-gray-900">
-                    Filtersmobile
-                  </h2>
-
-                  <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                  </div>
-
-                  <!--             <button
-                    type="button"
-                  
-                    class="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white p-2 text-gray-400"
-                  >
-                    <span class="sr-only">Close menu</span>
-                  
-                    <svg
-                      class="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
-                  </button> -->
-                </div>
-
-                <!-- Filters -->
-                <form class="mt-4 border-t border-gray-200">
-                  <h3 class="sr-only">Categories</h3>
-
-                  <div class="border-t border-gray-200 px-4 py-6">
-                    <h3 class="-mx-2 -my-3 flow-root">
-                      <!-- Expand/collapse section button -->
-                      <button
-                        type="button"
-                        class="flex w-full items-center justify-between px-2 py-3 text-gray-400 hover:text-gray-500"
-                        aria-controls="filter-section-mobile-0"
-                        aria-expanded="false"
-                      >
-                        <span class="font-medium text-gray-900">Cuisine</span>
-                      </button>
-                    </h3>
-                    <!-- Filter section, show/hide based on section state. -->
-                    <div class="pt-6" id="filter-section-mobile-0">
-                      <div class="space-y-6">
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-color-0"
-                            name="color[]"
-                            value="italian"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-color-0"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Italian</label
-                          >
-                        </div>
-
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-color-1"
-                            name="color[]"
-                            value="french"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-color-1"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >French</label
-                          >
-                        </div>
-
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-color-2"
-                            name="color[]"
-                            value="scandinavian"
-                            type="checkbox"
-                            checked
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-color-2"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Scandinavian</label
-                          >
-                        </div>
-
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-color-3"
-                            name="color[]"
-                            value="asian"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-color-3"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Asian</label
-                          >
-                        </div>
-
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-color-4"
-                            name="color[]"
-                            value="slavic"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-color-4"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Slavic</label
-                          >
-                        </div>
-
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-color-5"
-                            name="color[]"
-                            value="local"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-color-5"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Local</label
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="border-t border-gray-200 px-4 py-6">
-                    <h3 class="-mx-2 -my-3 flow-root">
-                      <!-- Expand/collapse section button -->
-                      <button
-                        type="button"
-                        class="flex w-full items-center justify-between px-2 py-3 text-gray-400 hover:text-gray-500"
-                        aria-controls="filter-section-mobile-1"
-                        aria-expanded="false"
-                      >
-                        <span class="font-medium text-gray-900"
-                          >Type of restaurant</span
-                        >
-                      </button>
-                    </h3>
-                    <!-- Filter section, show/hide based on section state. -->
-                    <div class="pt-6" id="filter-section-mobile-1">
-                      <div class="space-y-6">
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-category-0"
-                            name="category[]"
-                            value="casual"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-category-0"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Casual</label
-                          >
-                        </div>
-
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-category-1"
-                            name="category[]"
-                            value="gourmet"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-category-1"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Gourmet</label
-                          >
-                        </div>
-
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-category-2"
-                            name="category[]"
-                            value="finedining"
-                            type="checkbox"
-                            checked
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-category-2"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Fine dining</label
-                          >
-                        </div>
-
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-category-3"
-                            name="category[]"
-                            value="Cafe"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-category-3"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Cafe</label
-                          >
-                        </div>
-
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-category-4"
-                            name="category[]"
-                            value="Bar/cocktails"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-category-4"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Bar/cocktails</label
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="border-t border-gray-200 px-4 py-6">
-                    <h3 class="-mx-2 -my-3 flow-root">
-                      <!-- Expand/collapse section button -->
-                      <button
-                        type="button"
-                        class="flex w-full items-center justify-between px-2 py-3 text-gray-400 hover:text-gray-500"
-                        aria-controls="filter-section-mobile-2"
-                        aria-expanded="false"
-                      >
-                        <span class="font-medium text-gray-900"
-                          >Seating option</span
-                        >
-                      </button>
-                    </h3>
-                    <!-- Filter section, show/hide based on section state. -->
-                    <div class="pt-6" id="filter-section-mobile-2">
-                      <div class="space-y-6">
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-size-0"
-                            name="size[]"
-                            value="standard"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-size-0"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Standard</label
-                          >
-                        </div>
-
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-size-1"
-                            name="size[]"
-                            value="terrace"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-size-1"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Terrace</label
-                          >
-                        </div>
-
-                        <div class="flex items-center">
-                          <input
-                            id="filter-mobile-size-2"
-                            name="size[]"
-                            value="bar"
-                            type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            for="filter-mobile-size-2"
-                            class="ml-3 min-w-0 flex-1 text-gray-500"
-                            >Bar</label
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
 
           <main class="mx-5 max-w-7xl px-4 sm:px-6 lg:pr-10 lg:pl-24">
             <!-- test showing all restaurants and sort section -->
 
-            <div class="mt-20 grid grid-cols-4 sm:gap-8 lg:grid-cols-8">
+            <div class="mt-20 grid grid-cols-4 lg:grid-cols-8">
               <div class="col-span-5 col-start-1 self-center lg:col-start-3">
                 <h2 class="font-semibold">
                   Showing <span class="text-primary">all restaurants</span>
@@ -537,20 +197,9 @@
                 <form class="hidden lg:block">
                   <h3 class="sr-only">Categories</h3>
 
-                  <div class="border-b border-t border-blackshade py-6">
-                    <h3 class="-my-3 flow-root">
-                      <!-- Expand/collapse section button -->
-                      <button
-                        type="button"
-                        class="flex w-full items-center justify-between py-3 text-sm text-gray-400 hover:text-gray-500"
-                        aria-controls="filter-section-0"
-                        aria-expanded="false"
-                      >
-                        <span class="font-semibold text-blackshade"
-                          >Cuisine</span
-                        >
-                      </button>
-                    </h3>
+                  <div class="border-b border-t border-blackshade pt-6">
+                    <h2 class="text-sm text-blackshade">Cuisine</h2>
+
                     <!-- Filter section, show/hide based on section state. -->
                     <div class="pt-6" id="filter-section-0">
                       <div class="space-y-4">
@@ -560,11 +209,11 @@
                             name="color[]"
                             value="italian"
                             type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 rounded"
                           />
                           <label
                             for="filter-color-0"
-                            class="ml-3 text-sm text-gray-600"
+                            class="ml-3 text-sm text-secondary"
                             >Italian</label
                           >
                         </div>
@@ -575,11 +224,11 @@
                             name="color[]"
                             value="french"
                             type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 rounded"
                           />
                           <label
                             for="filter-color-1"
-                            class="ml-3 text-sm text-gray-600"
+                            class="ml-3 text-sm text-secondary"
                             >French</label
                           >
                         </div>
@@ -591,18 +240,20 @@
                             value="scandinavian"
                             type="checkbox"
                             checked
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 rounded"
                           />
                           <label
                             for="filter-color-2"
-                            class="ml-3 text-sm text-gray-600"
+                            class="ml-3 text-sm text-secondary"
                             >Scandinavian</label
                           >
                         </div>
 
                         <div class="collapse">
                           <input type="checkbox" />
-                          <div class="collapse-title font-medium">
+                          <div
+                            class="collapse-title -mt-4 font-semibold text-primary"
+                          >
                             + See more
                           </div>
                           <div class="collapse-content">
@@ -612,11 +263,11 @@
                                 name="color[]"
                                 value="asian"
                                 type="checkbox"
-                                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                class="h-4 w-4 rounded"
                               />
                               <label
                                 for="filter-color-3"
-                                class="ml-3 text-sm text-gray-600"
+                                class="ml-3 text-sm text-secondary"
                                 >Asian</label
                               >
                             </div>
@@ -627,11 +278,11 @@
                                 name="color[]"
                                 value="slavic"
                                 type="checkbox"
-                                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                class="h-4 w-4 rounded"
                               />
                               <label
                                 for="filter-color-4"
-                                class="ml-3 text-sm text-gray-600"
+                                class="ml-3 text-sm text-secondary"
                                 >Slavic</label
                               >
                             </div>
@@ -642,11 +293,11 @@
                                 name="color[]"
                                 value="local"
                                 type="checkbox"
-                                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                class="h-4 w-4 rounded"
                               />
                               <label
                                 for="filter-color-5"
-                                class="ml-3 text-sm text-gray-600"
+                                class="ml-3 text-sm text-secondary"
                                 >Local</label
                               >
                             </div>
@@ -657,19 +308,7 @@
                   </div>
 
                   <div class="border-b border-blackshade py-6">
-                    <h3 class="-my-3 flow-root">
-                      <!-- Expand/collapse section button -->
-                      <button
-                        type="button"
-                        class="flex w-full items-center justify-between py-3 text-sm text-gray-400 hover:text-gray-500"
-                        aria-controls="filter-section-1"
-                        aria-expanded="false"
-                      >
-                        <span class="font-semibold text-blackshade"
-                          >Type of restaurant</span
-                        >
-                      </button>
-                    </h3>
+                    <h2 class="text-sm text-blackshade">Type of restaurant</h2>
                     <!-- Filter section, show/hide based on section state. -->
                     <div class="pt-6" id="filter-section-1">
                       <div class="space-y-4">
@@ -679,11 +318,11 @@
                             name="category[]"
                             value="casual"
                             type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 rounded"
                           />
                           <label
                             for="filter-category-0"
-                            class="ml-3 text-sm text-gray-600"
+                            class="ml-3 text-sm text-secondary"
                             >Casual</label
                           >
                         </div>
@@ -694,11 +333,11 @@
                             name="category[]"
                             value="gourmet"
                             type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 rounded"
                           />
                           <label
                             for="filter-category-1"
-                            class="ml-3 text-sm text-gray-600"
+                            class="ml-3 text-sm text-secondary"
                             >Gourmet</label
                           >
                         </div>
@@ -710,11 +349,11 @@
                             value="finedining"
                             type="checkbox"
                             checked
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 rounded"
                           />
                           <label
                             for="filter-category-2"
-                            class="ml-3 text-sm text-gray-600"
+                            class="ml-3 text-sm text-secondary"
                             >Fine dining</label
                           >
                         </div>
@@ -725,11 +364,11 @@
                             name="category[]"
                             value="cafe"
                             type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 rounded"
                           />
                           <label
                             for="filter-category-3"
-                            class="ml-3 text-sm text-gray-600"
+                            class="ml-3 text-sm text-secondary"
                             >Cafe</label
                           >
                         </div>
@@ -740,11 +379,11 @@
                             name="category[]"
                             value="barcocktails"
                             type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 rounded"
                           />
                           <label
                             for="filter-category-4"
-                            class="ml-3 text-sm text-gray-600"
+                            class="ml-3 text-sm text-secondary"
                             >Bar/cocktails</label
                           >
                         </div>
@@ -753,19 +392,7 @@
                   </div>
 
                   <div class="border-b border-blackshade py-6">
-                    <h3 class="-my-3 flow-root">
-                      <!-- Expand/collapse section button -->
-                      <button
-                        type="button"
-                        class="flex w-full items-center justify-between py-3 text-sm text-gray-400 hover:text-gray-500"
-                        aria-controls="filter-section-2"
-                        aria-expanded="false"
-                      >
-                        <span class="font-semibold text-blackshade"
-                          >Seating option</span
-                        >
-                      </button>
-                    </h3>
+                    <h2 class="text-sm text-blackshade">Seating option</h2>
                     <!-- Filter section, show/hide based on section state. -->
                     <div class="pt-6" id="filter-section-2">
                       <div class="space-y-4">
@@ -775,11 +402,11 @@
                             name="size[]"
                             value="standard"
                             type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 rounded"
                           />
                           <label
                             for="filter-size-0"
-                            class="ml-3 text-sm text-gray-600"
+                            class="ml-3 text-sm text-secondary"
                             >Standard</label
                           >
                         </div>
@@ -790,11 +417,11 @@
                             name="size[]"
                             value="terrace"
                             type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 rounded"
                           />
                           <label
                             for="filter-size-1"
-                            class="ml-3 text-sm text-gray-600"
+                            class="ml-3 text-sm text-secondary"
                             >Terrace</label
                           >
                         </div>
@@ -805,11 +432,11 @@
                             name="size[]"
                             value="bar"
                             type="checkbox"
-                            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 rounded"
                           />
                           <label
                             for="filter-size-2"
-                            class="ml-3 text-sm text-gray-600"
+                            class="ml-3 text-sm text-secondary"
                             >Bar</label
                           >
                         </div>
@@ -844,7 +471,7 @@
                               alt=""
                               class="mr-3 h-5"
                             />
-                            <h4 class="underline">341 reviews</h4>
+                            <p class="underline">341 reviews</p>
                           </div>
                           <p class="italic text-secondary">
                             Italian · Gourmet · Tallinn
@@ -894,7 +521,7 @@
                               alt=""
                               class="mr-3 h-5"
                             />
-                            <h4 class="underline">115 reviews</h4>
+                            <p class="underline">115 reviews</p>
                           </div>
                           <p class="italic text-secondary">
                             Italian · Gourmet · Tallinn
@@ -944,7 +571,7 @@
                               alt=""
                               class="mr-3 h-5"
                             />
-                            <h4 class="underline">720 reviews</h4>
+                            <p class="underline">720 reviews</p>
                           </div>
                           <p class="italic text-secondary">
                             Italian · Casual · Tallinn
@@ -994,7 +621,7 @@
                               alt=""
                               class="mr-3 h-5"
                             />
-                            <h4 class="underline">68 reviews</h4>
+                            <p class="underline">68 reviews</p>
                           </div>
                           <p class="italic text-secondary">
                             International · Michelin · Tallinn
@@ -1038,7 +665,7 @@
       class="footer bg-base-200 pt-10 pb-10 pl-10 text-base-content sm:mt-16 sm:pl-28"
     >
       <div>
-        <img src="/src/img/logo.png" alt="logo" class="w-40" />
+        <img src="/src/img/logo.webp" alt="logo" />
         <p>DinnerBooking</p>
         <p>Lyongade 21, 1.</p>
         <p>2300 København S</p>

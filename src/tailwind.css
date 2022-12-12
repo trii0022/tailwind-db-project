@@ -19,8 +19,9 @@
   }
 
   h3 {
-    @apply text-md;
+    @apply text-sm;
     @apply font-lato;
+    @apply text-secondary;
   }
   h4 {
     @apply text-sm;
