@@ -29,7 +29,7 @@
     <p class="py-4"></p>
     <img src="img/rudolfmenu.webp" alt="Rudolf menu" class="w-full">
     <img src="img/rudolfmenu2.webp" alt="Rudolf menu" class="w-full">
-    <img src="img/rudolfmenu3.webp" alt="Rudolf menu" class="w-full">
+    <img src="img/rudolfdessert.webp" alt="Rudolf menu" class="w-full">
     <div class="modal-action">
       <label for="my-modal" class="btn">Close</label>
     </div>
@@ -42,21 +42,21 @@
     <div class="lg:ml-10 lg:mr-10">
       <div class="navbar">
         <div class="flex-1">
-          <a href="/src/index.html" class="btn-ghost btn">
+          <a href="/src/index.html" class="btn-ghost btn   ">
             <img src="img/logo.webp" alt="logo" class="w-44" />
           </a>
         </div>
         <div class="hidden flex-none md:flex">
-          <ul class="menu menu-horizontal p-0">
+          <ul class="menu menu-horizontal p-0 rounded-xl">
             <li>
-              <a href="/src/filter.html" class="text-md text-secondary"
+              <a href="/src/filter.html" class="text-md text-secondary rounded-xl"
                 >Browse restaurants</a
               >
             </li>
             <a class="self-center text-md text-secondary">|</a>
-            <li><a class="text-primary">Sign up</a></li>
-            <li><a class="text-secondary">Log in</a></li>
-            <li tabindex="0">
+            <li><a class="text-primary font-semibold rounded-xl ">Sign up</a></li>
+            <li><a class="text-secondary rounded-xl ">Log in</a></li>
+            <li tabindex="0" >
               <a>
                 EN
                 <svg
@@ -100,7 +100,7 @@
             class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
           >
             <li><a href="/src/filter.html">Browse restaurants</a></li>
-            <li><a class="text-primary">Sign up</a></li>
+            <li><a class="text-primary font-semibold">Sign up</a></li>
             <li><a>Log in</a></li>
             <li><a>Language</a></li>
           </ul>
@@ -149,7 +149,8 @@
               alt=""
               class="float-left h-7 sm:float-right"
             />
-            <p class="text-start underline md:text-end">341 reviews</p>
+            <a href="#guestreviews">
+            <p class="text-start underline md:text-end">341 reviews</p></a>
           </div>
         </div>
 
@@ -207,7 +208,7 @@
 
         <div class="hidden md:grid">
 
-        <h2 class="mt-10 text-start">Guest reviews</h2>
+        <h2 class="mt-10 text-start" id="guestreviews">Guest reviews</h2>
 
    <div class="pt-5 pb-5 rounded-xl bg-white mt-5 pr-2 pl-5">
 
@@ -385,7 +386,7 @@
         <div class="flex"> 
           <img src="img/restaurant.svg" alt="cutlery icon" class="mr-1 mb-2">
        
-        <label for="my-modal" class="font-semibold font-lato  text-secondary ">See menu</label> 
+        <label for="my-modal" class="font-semibold font-lato underline  text-secondary ">See menu</label> 
         </div>
 
         <div class="flex">
@@ -446,7 +447,7 @@
 
 <div class="grid-cols-8 col-start-2 col-span-6">
 
-  <h2 class="mt-10 text-start">Guest reviews</h2>
+  <h2 class="mt-10 text-start" id="guestreviews">Guest reviews</h2>
 
    <div class="pt-5 pb-5 rounded-xl bg-white mt-5 pl-5">
 
@@ -525,7 +526,7 @@
        class="footer bg-base-200 pt-10 pb-10 pl-10 text-base-content sm:mt-16 sm:pl-28"
      >
        <div>
-         <img src="/src/img/logo.webp" alt="logo" />
+        <img src="/src/img/logo.webp" alt="logo" class="w-44" />
          <p>DinnerBooking</p>
          <p>Lyongade 21, 1.</p>
          <p>2300 København S</p>
