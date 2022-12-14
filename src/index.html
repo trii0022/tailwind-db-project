@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find and book the perfect restaurant for any occasion. Browse menus, read reviews, and make reservations. Discover new restaurants in your area."
+    />
     <title>Book your table online - DinnerBooking</title>
     <meta name="robots" content="noindex, nofollow" />
     <link rel="icon" href="img/db_logo.webp" />
@@ -16,6 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@200;300;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="https://use.typekit.net/jwf4okm.css">
   </head>
   <body>
     <script type="module" src="index.js"></script>
@@ -25,7 +31,7 @@
       <div class="navbar">
         <div class="flex-1">
           <a href="/src/index.html" class="btn-ghost btn">
-            <img src="img/logo.webp" alt="logo" />
+            <img src="img/logo.webp" alt="logo" class="w-44" />
           </a>
         </div>
         <div class="hidden flex-none md:flex">
@@ -36,7 +42,7 @@
               >
             </li>
             <a class="self-center text-md text-secondary">|</a>
-            <li><a class="text-primary">Sign up</a></li>
+            <li><a class="text-primary font-semibold">Sign up</a></li>
             <li><a class="text-secondary">Log in</a></li>
             <li tabindex="0">
               <a>
@@ -82,7 +88,7 @@
             class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
           >
             <li><a href="/src/filter.html">Browse restaurants</a></li>
-            <li><a class="text-primary">Sign up</a></li>
+            <li><a class="text-primary font-semibold">Sign up</a></li>
             <li><a>Log in</a></li>
             <li><a>Language</a></li>
           </ul>
@@ -97,7 +103,7 @@
     <div class="xs:hero flex-none sm:hidden sm:min-h-screen">
       <div class="hero-content flex-col lg:flex-row-reverse">
         <div class="lg:pr-10 lg:text-left">
-          <img src="img/hero.webp" alt="" />
+          <img src="img/hero.webp" alt="food" class="min-h-16" />
         </div>
 
         <div class="lg:pl-10">
@@ -136,13 +142,9 @@
                 </a>
               </div>
 
-              <label class="label">
-                <a
-                  href="/src/filter.html"
-                  class="link-hover label-text-alt link font-bold text-primary"
-                  >Browse all restaurants</a
-                >
-              </label>
+           
+              <a href="/src/filter.html">
+              <p class="text-primary font-bold text-sm hover:text-blackshade hover:underline mt-3">Browse all restaurants</p></a>
             </div>
           </div>
         </div>
@@ -160,7 +162,7 @@
           class="grid-content card mt-14 mb-14 w-full flex-shrink-0 bg-base-100 pt-5 pb-5 shadow-2xl"
         >
           <div class="card-body">
-            <h1 class="mb-3 text-xl font-extrabold">
+            <h1 class="mb-3 text-2xl font-extrabold">
               Start your dining experience here
             </h1>
             <div class="form-control">
@@ -191,13 +193,9 @@
               </a>
             </div>
 
-            <label class="label">
-              <a
-                href="/src/filter.html"
-                class="link-hover label-text-alt link font-bold text-primary"
-                >Browse all restaurants</a
-              >
-            </label>
+        
+            <a href="/src/filter.html">
+              <p class="text-primary font-bold text-sm hover:text-blackshade hover:underline mt-3">Browse all restaurants</p></a>
           </div>
         </div>
       </div>
@@ -229,7 +227,7 @@
           class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
         >
           <figure>
-            <img src="img/rudolf.webp" alt="Rudolf restaurant" class="" />
+            <img src="img/rudolf.webp" alt="Rudolf restaurant" class="w-full" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">Rudolf restaurant</h2>
@@ -254,7 +252,7 @@
           class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
         >
           <figure>
-            <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" />
+            <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" class="w-full" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">Mantel & Korsten</h2>
@@ -279,7 +277,7 @@
           class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
         >
           <figure>
-            <img src="img/barbarea.webp" alt="Barbarea restaurant" />
+            <img src="img/barbarea.webp" alt="Barbarea restaurant" class="w-full" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">Barbarea</h2>
@@ -304,7 +302,7 @@
           class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
         >
           <figure>
-            <img src="img/nch.webp" alt="Noa Chef's Hall" />
+            <img src="img/nch.webp" alt="Noa Chef's Hall" class="w-full" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">NOA Chef's Hall</h2>
@@ -332,7 +330,7 @@
     <!-- Most popular restaurants - horizontal scroll mobile -->
 
     <div class="mt-5 pt-3 sm:hidden">
-      <h2 class="mt-5 text-center text-secondary">
+      <h2 class="mt-5 text-center text-secondary mx-2">
         Most popular restaurants in Tallinn
       </h2>
 
@@ -348,7 +346,7 @@
             class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
           >
             <figure>
-              <img src="img/rudolf.webp" alt="Rudolf restaurant" class="" />
+              <img src="img/rudolf.webp" alt="Rudolf restaurant" class="w-full" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Rudolf restaurant</h2>
@@ -374,7 +372,7 @@
             class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
           >
             <figure>
-              <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" />
+              <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" class="w-full"/>
             </figure>
             <div class="card-body">
               <h2 class="card-title">Mantel & Korsten</h2>
@@ -400,7 +398,7 @@
             class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
           >
             <figure>
-              <img src="img/barbarea.webp" alt="Barbarea restaurant" />
+              <img src="img/barbarea.webp" alt="Barbarea restaurant" class="w-full" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Barbarea</h2>
@@ -426,7 +424,7 @@
             class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
           >
             <figure>
-              <img src="img/nch.webp" alt="Noa Chef's Hall" />
+              <img src="img/nch.webp" alt="Noa Chef's Hall" class="w-full"/>
             </figure>
             <div class="card-body">
               <h2 class="card-title">NOA Chef's Hall</h2>
@@ -479,14 +477,14 @@
             <img
               src="img/xmas.webp"
               alt="City Grill House christmas"
-              class=""
+              class="w-full"
             />
           </figure>
           <div class="card-body">
             <h3>24.12.2022</h3>
             <h2 class="card-title">Christmas dinner with City Grill House</h2>
             <div class="-mt-1 flex">
-              <img src="img/cutlery.svg" alt="" class="" />
+              <img src="img/cutlery.svg" alt="cutlery"  />
               <p class="ml-2">5-course menu with wine</p>
             </div>
 
@@ -510,7 +508,7 @@
           class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
         >
           <figure>
-            <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" />
+            <img src="img/nero.webp" alt="Mantel ja Korsten restaurant" class="w-full" />
           </figure>
           <div class="card-body">
             <h3>31.12.2022</h3>
@@ -541,7 +539,7 @@
           class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
         >
           <figure>
-            <img src="img/barbarea.webp" alt="Barbarea restaurant" />
+            <img src="img/pohjala.webp" alt="Pohjala restaurant" class="w-full" />
           </figure>
           <div class="card-body">
             <h3>ONGOING</h3>
@@ -572,7 +570,7 @@
           class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
         >
           <figure>
-            <img src="img/nch.webp" alt="Noa Chef's Hall" />
+            <img src="img/peppersack.webp" alt="Peppersack" class="w-full"/>
           </figure>
           <div class="card-body">
             <h3>31.12.2022</h3>
@@ -621,7 +619,7 @@
               <img
                 src="img/xmas.webp"
                 alt="City Grill House christmas"
-                class=""
+                class="w-full"
               />
             </figure>
             <div class="card-body">
@@ -653,7 +651,7 @@
             class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
           >
             <figure>
-              <img src="img/mantel.webp" alt="Mantel ja Korsten restaurant" />
+              <img src="img/nero.webp" alt="Mantel ja Korsten restaurant" class="w-full" />
             </figure>
             <div class="card-body">
               <h3>31.12.2022</h3>
@@ -685,7 +683,7 @@
             class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
           >
             <figure>
-              <img src="img/barbarea.webp" alt="Barbarea restaurant" />
+              <img src="img/pohjala.webp" alt="Pohjala restaurant" class="w-full" />
             </figure>
             <div class="card-body">
               <h3>ONGOING</h3>
@@ -717,7 +715,7 @@
             class="card card-compact mb-3 flex w-72 justify-self-center bg-base-100 shadow-xl"
           >
             <figure>
-              <img src="img/nch.webp" alt="Noa Chef's Hall" />
+              <img src="img/peppersack.webp" alt="Peppersack" class="w-full"/>
             </figure>
             <div class="card-body">
               <h3>31.12.2022</h3>
@@ -752,24 +750,24 @@
     <footer
       class="footer bg-base-200 pt-10 pb-10 pl-10 text-base-content sm:mt-16 sm:pl-28"
     >
-      <div>
+      <div class="">
         <img src="/src/img/logo.webp" alt="logo" />
         <p>DinnerBooking</p>
         <p>Lyongade 21, 1.</p>
         <p>2300 København S</p>
       </div>
-      <div>
+      <div class="gap-4 sm:gap-2">
         <span class="font-semibold uppercase text-primary">General</span>
         <a class="link-hover link">About us</a>
         <a class="link-hover link">Press</a>
         <a class="link-hover link">Contact</a>
       </div>
-      <div>
+      <div class="gap-4 sm:gap-2">
         <span class="font-semibold uppercase text-primary">Legal</span>
         <a class="link-hover link">Privacy</a>
         <a class="link-hover link">Terms of Use</a>
       </div>
-      <div>
+      <div class="gap-4 sm:gap-2">
         <span class="font-semibold uppercase text-primary"
           >For restaurants</span
         >
@@ -777,7 +775,7 @@
         <a class="link-hover link">Start TeamViewer</a>
         <a class="link-hover link">System status</a>
       </div>
-      <div>
+      <div class="gap-4 sm:gap-2">
         <span class="font-semibold uppercase text-primary">Newsletter</span>
         <div class="form-control w-80">
           <label class="label">
@@ -798,11 +796,11 @@
               Subscribe
             </button>
           </div>
-        </div>
+        </div class="gap-4 sm:gap-2">
 
         <span class="mt-5 font-semibold uppercase text-primary">Follow us</span>
 
-        <div class="flex gap-2">
+        <div class="flex gap-6 sm:gap-4">
           <img src="img/instagram.svg" alt="Instagram icon" />
           <img src="img/facebook.svg" alt="Facebook icon" />
           <img src="img/twitter.svg" alt="Twitter icon" />

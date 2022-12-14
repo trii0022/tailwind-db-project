@@ -8,7 +8,7 @@
     @apply bg-background;
   }
   h1 {
-    @apply font-montserrat;
+    @apply font-paralucent;
     @apply text-secondary;
   }
   h2 {

@@ -13,7 +13,7 @@ module.exports = {
         primary: "#3295ED",
         secondary: "#45473B",
         tertiary: "#2d86d5",
-        background: "#DBEAFE",
+        background: "#dbeafe",
         blackshade: "#272725",
       },
 
@@ -22,12 +22,13 @@ module.exports = {
         md: "1.25rem",
         lg: "1.55rem",
         xl: "2.25rem",
-        "2xl": "2rem",
+        "2xl": "2.50rem",
       },
 
       fontFamily: {
         lato: "'Lato', sans-serif",
         montserrat: "'Montserrat', sans-serif",
+        paralucent: "'Paralucent', sans-serif",
       },
     },
     plugins: [
