@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find and book the perfect restaurant for any occasion. Browse menus, read reviews, and make reservations. Discover new restaurants in your area.">
+    <title>Search restaurants</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="/db_logo.9c637a65.webp">
+    <link rel="stylesheet" href="/index.e50cd025.css">
+    <link rel="stylesheet" href="/index.2cdaf7bc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@200;300;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="/index.975ef6c8.js" defer=""></script>
+
+    <!-- Navbar start -->
+    <div class="lg:ml-10 lg:mr-10">
+      <div class="navbar">
+        <div class="flex-1">
+          <a href="/index.html" class="btn-ghost btn border-none hover:border-none">
+            <img src="/logo.5920834c.webp" alt="logo" class="w-44">
+          </a>
+        </div>
+        <div class="hidden flex-none md:flex">
+          <ul class="menu menu-horizontal rounded-xl p-0">
+            <li>
+              <a href="/filter.html" class="rounded-xl text-md text-secondary hover:text-secondary">Browse restaurants</a>
+            </li>
+            <a class="self-center text-md text-secondary">|</a>
+            <li>
+              <a class="rounded-xl font-semibold text-primary hover:text-primary">Sign up</a>
+            </li>
+            <li><a class="rounded-xl text-secondary">Log in</a></li>
+            <li tabindex="0">
+              <a>
+                EN
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24">
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                </svg>
+              </a>
+              <ul class="bg-base-100 p-2">
+                <li><a>EE</a></li>
+                <li><a>DK</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dropdown-end dropdown flex-none md:hidden">
+          <button class="btn-ghost btn-square btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" class="inline-block h-5 w-5 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+          <ul tabindex="0" class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow">
+            <li><a href="/filter.html">Browse restaurants</a></li>
+            <li><a class="font-semibold text-primary">Sign up</a></li>
+            <li><a>Log in</a></li>
+            <li><a>Language</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar end -->
+
+    <!-- search -->
+
+    <h1 class="mt-14 mb-5 text-center text-lg font-extrabold">
+      Browse restaurants
+    </h1>
+
+    <div class="mx-10 gap-2 sm:mx-0 sm:grid sm:grid-cols-8">
+      <div class="form-control col-span-2 col-start-3 mb-2">
+        <input type="text" placeholder="Type in cuisine or restaurant name" class="input-bordered input">
+      </div>
+
+      <div class="form-control col-span-1 col-start-5 mb-2">
+        <input type="text" placeholder="Location" class="input-bordered input">
+      </div>
+
+      <a href="/filter.html" class="">
+        <div class="form-control">
+          <button class="btn-primary btn border-none bg-primary hover:bg-tertiary">
+            Search
+          </button>
+        </div>
+      </a>
+    </div>
+
+    <!-- end of search -->
+
+    <div>
+      <div class="">
+        <div>
+          <main class="mx-5 max-w-7xl px-4 sm:px-6 lg:pr-10 lg:pl-24">
+            <!-- test showing all restaurants and sort section -->
+
+            <div class="mt-20 grid grid-cols-4 lg:grid-cols-8">
+              <div class="col-span-5 col-start-1 self-center lg:col-start-3">
+                <h2 class="font-semibold">
+                  Showing <span class="text-primary">all restaurants</span>
+                </h2>
+              </div>
+
+              <div class="col-span-1 col-start-8">
+                <div>
+                  <div class="flex-none">
+                    <ul class="menu menu-horizontal p-0">
+                      <li tabindex="0">
+                        <a>
+                          SORT
+                          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24">
+                            <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                          </svg>
+                        </a>
+                        <ul class="bg-base-100 p-2">
+                          <li><a>Most popular</a></li>
+                          <li><a>Highest rated</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <a href="/filtermobile.html">
+                <div class="flex lg:hidden">
+                  <button class="btn-primary btn border-blackshade bg-background text-blackshade hover:border-none hover:bg-tertiary hover:text-white">
+                    <img src="/filter.5c398b93.svg" alt="filter" class="mr-1 w-4">
+                    Filter
+                  </button>
+                </div></a>
+            </div>
+
+            <!-- end test showing all restaurants and sort section -->
+
+            <section class="pt-6 pb-24">
+              <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+                <!-- Filters -->
+                <form class="hidden lg:block">
+                  <h3 class="sr-only">Categories</h3>
+
+                  <div class="border-b border-t border-blackshade pt-6">
+                    <h2 class="text-sm text-blackshade">Cuisine</h2>
+
+                    <!-- Filter section, show/hide based on section state. -->
+                    <div class="pt-6">
+                      <div class="space-y-4">
+                        <div class="flex items-center">
+                          <input id="cuisine-1" name="cuisine[]" value="italian" type="checkbox" class="h-4 w-4">
+                          <label for="cuisine-1" class="ml-3 text-sm text-secondary">Italian</label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="cuisine-2" name="cuisine[]" value="french" type="checkbox" class="h-4 w-4">
+                          <label for="cuisine-2" class="ml-3 text-sm text-secondary">French</label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="cuisine-3" name="cuisine[]" value="scandinavian" type="checkbox" checked="" class="h-4 w-4">
+                          <label for="cuisine-3" class="ml-3 text-sm text-secondary">Scandinavian</label>
+                        </div>
+
+                        <div class="collapse">
+                          <input type="checkbox">
+                          <div class="collapse-title -mt-4 font-semibold text-primary">
+                            + See more
+                          </div>
+                          <div class="collapse-content">
+                            <div class="flex items-center">
+                              <input id="cuisine-4" name="cuisine[]" value="asian" type="checkbox" class="h-4 w-4 rounded">
+                              <label for="cuisine-4" class="ml-3 text-sm text-secondary">Asian</label>
+                            </div>
+
+                            <div class="flex items-center">
+                              <input id="cuisine-5" name="cuisine[]" value="slavic" type="checkbox" class="h-4 w-4">
+                              <label for="cuisine-5" class="ml-3 text-sm text-secondary">Slavic</label>
+                            </div>
+
+                            <div class="flex items-center">
+                              <input id="cuisine-6" name="cuisine[]" value="local" type="checkbox" class="h-4 w-4 rounded">
+                              <label for="cuisine-6" class="ml-3 text-sm text-secondary">Local</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="border-b border-blackshade py-6">
+                    <h2 class="text-sm text-blackshade">Type of restaurant</h2>
+                    <!-- Filter section, show/hide based on section state. -->
+                    <div class="pt-6" id="filter-section-1">
+                      <div class="space-y-4">
+                        <div class="flex items-center">
+                          <input id="type-1" name="type[]" value="casual" type="checkbox" class="h-4 w-4">
+                          <label for="type-1" class="ml-3 text-sm text-secondary">Casual</label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="type-2" name="type[]" value="gourmet" type="checkbox" class="h-4 w-4">
+                          <label for="type-2" class="ml-3 text-sm text-secondary">Gourmet</label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="type-3" name="type[]" value="finedining" type="checkbox" checked="" class="h-4 w-4">
+                          <label for="type-3" class="ml-3 text-sm text-secondary">Fine dining</label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="type-4" name="type[]" value="cafe" type="checkbox" class="h-4 w-4">
+                          <label for="type-4" class="ml-3 text-sm text-secondary">Cafe</label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="type-5" name="type[]" value="barcocktails" type="checkbox" class="h-4 w-4">
+                          <label for="type-5" class="ml-3 text-sm text-secondary">Bar/cocktails</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-b border-blackshade py-6">
+                    <h2 class="text-sm text-blackshade">Price</h2>
+
+                    <div class="mt-4 flex rounded-full border-2 border-primary text-center">
+                      <p class="border-r-2 border-primary py-2 pl-10 pr-8 text-md hover:rounded-full hover:border-none hover:bg-white">
+                        €
+                      </p>
+                      <p class="border-r-2 border-primary py-2 pl-7 pr-7 text-md hover:rounded-full hover:border-none hover:bg-white">
+                        €€
+                      </p>
+                      <p class="py-2 pl-6 pr-7 text-md hover:rounded-full hover:border-none hover:bg-white">
+                        €€€
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="border-b border-blackshade py-6">
+                    <h2 class="text-sm text-blackshade">Seating option</h2>
+                    <!-- Filter section, show/hide based on section state. -->
+                    <div class="pt-6">
+                      <div class="space-y-4">
+                        <div class="flex items-center">
+                          <input id="seating-1" name="seating[]" value="standard" type="checkbox" class="h-4 w-4">
+                          <label for="seating-1" class="ml-3 text-sm text-secondary">Standard</label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="seating-2" name="seating[]" value="terrace" type="checkbox" class="h-4 w-4">
+                          <label for="seating-2" class="ml-3 text-sm text-secondary">Terrace</label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="seating-3" name="seating[]" value="bar" type="checkbox" class="h-4 w-4">
+                          <label for="seating-3" class="ml-3 text-sm text-secondary">Bar</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="border-b border-blackshade py-6">
+                    <h2 class="text-sm text-blackshade">Events</h2>
+                    <div class="pt-6">
+                      <div class="flex items-center">
+                        <input id="events-1" name="events[]" value="events" type="checkbox" class="h-4 w-4">
+                        <label for="events-1" class="ml-3 text-sm text-secondary">Show restaurants with events</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+                <!-- Product grid -->
+                <div class="lg:col-span-3">
+                  <!-- Replace with your content -->
+
+                  <div class="rounded-lg border-gray-200">
+                    <div class="mb-5 grid grid-flow-col rounded-xl bg-white">
+                      <div class="col-span-1 mr-3">
+                        <a href="/restaurant.html">
+                          <img class="h-full w-full rounded-l-lg object-cover" src="/rudolf.12734f94.webp" alt="Rudolf" href="restaurant.html"></a>
+                      </div>
+
+                      <div class="col-span-2 mr-3 ml-3 mb-3">
+                        <a href="/restaurant.html">
+                          <h2 class="mt-2 text-secondary">Rudolf restaurant</h2>
+
+                          <div class="mt-1 flex text-secondary">
+                            <img src="/rating.f4acf49a.webp" alt="" class="mr-3 h-5">
+                            <p class="underline">341 reviews</p>
+                          </div>
+                          <p class="italic text-secondary">
+                            Italian · Gourmet · Tallinn
+                          </p>
+
+                          <p class="mt-2 mr-3 hidden sm:grid">
+                            Restaurant Rudolf resides on R. Tobiase 11-1 in
+                            Tallinn. The restaurant is close to many attractions
+                            such as Anton Hansen Tammsaare Museum, Kadriorg Park
+                            and Kadriorg Carousel. In the forefront of Rudolf
+                            restaurant stand two...
+                          </p></a>
+                      </div>
+
+                      <div class="col-span-1 mb-3 mr-3 flex items-end justify-items-center">
+                        <a href="/restaurant.html">
+                          <button class="btn-primary btn border-none bg-primary hover:bg-tertiary">
+                            Book
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="mb-5 grid grid-flow-col rounded-xl bg-white">
+                      <div class="col-span-1 mr-3">
+                        <a href="/restaurant.html">
+                          <img class="h-full w-full rounded-l-lg object-cover" src="/mantel.b56c25f5.webp" alt="Mantel" role="img"></a>
+                      </div>
+
+                      <div class="col-span-2 mr-3 ml-3 mb-3">
+                        <a href="/restaurant.html">
+                          <h2 class="mt-2 text-secondary">Mantel ja Korsten</h2>
+
+                          <div class="mt-1 flex text-secondary">
+                            <img src="/rating.f4acf49a.webp" alt="" class="mr-3 h-5">
+                            <p class="underline">115 reviews</p>
+                          </div>
+                          <p class="italic text-secondary">
+                            Italian · Gourmet · Tallinn
+                          </p>
+
+                          <p class="mt-2 mr-3 hidden sm:grid">
+                            Mantel Ja Korsten is perfect for both lunch and
+                            dinner, where one can enjoy the
+                            Mediterranean-inspired dishes developed by head chef
+                            Jüri Vainküla. The menu offers intriguing dishes
+                            such as swordfish with passion fruit dressing...
+                          </p></a>
+                      </div>
+
+                      <div class="col-span-1 mb-3 mr-3 flex items-end justify-end">
+                        <a href="/restaurant.html">
+                          <button class="btn-primary btn border-none bg-primary hover:bg-tertiary">
+                            Book
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="mb-5 grid grid-flow-col rounded-xl bg-white">
+                      <div class="col-span-1 mr-3">
+                        <a href="/restaurant.html">
+                          <img class="h-full w-full rounded-l-lg object-cover" src="/barbarea.424be16a.webp" alt="Barbarea" role="img"></a>
+                      </div>
+
+                      <div class="col-span-2 mr-3 ml-3 mb-3">
+                        <a href="/restaurant.html">
+                          <h2 class="mt-2 text-secondary">Barbarea</h2>
+
+                          <div class="mt-1 flex text-secondary">
+                            <img src="/rating.f4acf49a.webp" alt="" class="mr-3 h-5">
+                            <p class="underline">720 reviews</p>
+                          </div>
+                          <p class="italic text-secondary">
+                            Italian · Casual · Tallinn
+                          </p>
+
+                          <p class="mt-2 mr-3 hidden sm:grid">
+                            Barbarea is a restaurant and a natural wine bar in
+                            Kopli which opens its doors for the evening after
+                            Karjase sai bakery closes its doors in the
+                            afternoon.The menu’s inspiration is gathered from
+                            different parts of the world and...
+                          </p></a>
+                      </div>
+
+                      <div class="col-span-1 mb-3 mr-3 flex items-end justify-end">
+                        <a href="/restaurant.html">
+                          <button class="btn-primary btn border-none bg-primary hover:bg-tertiary">
+                            Book
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="mb-5 grid grid-flow-col rounded-xl bg-white">
+                      <div class="col-span-1 mr-3">
+                        <a href="/restaurant.html">
+                          <img class="h-full w-full rounded-l-lg object-cover" src="/nch.bf11b5a7.webp" alt="Noa Chef's Hall" role="img"></a>
+                      </div>
+
+                      <div class="col-span-2 mr-3 ml-3 mb-3">
+                        <a href="/restaurant.html">
+                          <h2 class="mt-2 text-secondary">NOA Chef's Hall</h2>
+
+                          <div class="mt-1 flex text-secondary">
+                            <img src="/rating.f4acf49a.webp" alt="" class="mr-3 h-5">
+                            <p class="underline">68 reviews</p>
+                          </div>
+                          <p class="italic text-secondary">
+                            International · Michelin · Tallinn
+                          </p>
+
+                          <p class="mt-2 mr-3 hidden sm:grid">
+                            Extraordinary from start to finish, demanding your
+                            full attention. Even the smallest details are custom
+                            made, and our staff hand-picked from ultimate
+                            professionals. Simply promising to deliver you an
+                            immersive and unforgettable...
+                          </p></a>
+                      </div>
+
+                      <div class="col-span-1 mb-3 mr-3 flex items-end justify-end">
+                        <a href="/restaurant.html">
+                          <button class="btn-primary btn border-none bg-primary hover:bg-tertiary">
+                            Book
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- /End replace -->
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-base-200 pt-10 pb-10 pl-10 text-base-content sm:mt-16 sm:pl-28">
+      <div>
+        <img src="/logo.5920834c.webp" alt="logo" class="w-44">
+        <p>DinnerBooking</p>
+        <p>Lyongade 21, 1.</p>
+        <p>2300 København S</p>
+      </div>
+      <div>
+        <span class="font-semibold uppercase text-primary">General</span>
+        <a class="link-hover link">About us</a>
+        <a class="link-hover link">Press</a>
+        <a class="link-hover link">Contact</a>
+      </div>
+      <div>
+        <span class="font-semibold uppercase text-primary">Legal</span>
+        <a class="link-hover link">Privacy</a>
+        <a class="link-hover link">Terms of Use</a>
+      </div>
+      <div>
+        <span class="font-semibold uppercase text-primary">For restaurants</span>
+        <a class="link-hover link">Business site</a>
+        <a class="link-hover link">Start TeamViewer</a>
+        <a class="link-hover link">System status</a>
+      </div>
+      <div>
+        <span class="font-semibold uppercase text-primary">Newsletter</span>
+        <div class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Sign up for our newsletter to get the latest restaurant
+              news</span>
+          </label>
+          <div class="relative">
+            <input type="text" placeholder="username@email.com" class="input-bordered input w-full pr-16">
+            <button class="btn-primary btn absolute top-0 right-0 rounded-l-none border-none bg-primary hover:bg-tertiary">
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <span class="mt-5 font-semibold uppercase text-primary">Follow us</span>
+
+        <div class="flex gap-2">
+          <img src="/instagram.b6dad8a8.svg" alt="Instagram icon">
+          <img src="/facebook.cbb8eeac.svg" alt="Facebook icon">
+          <img src="/twitter.053898bd.svg" alt="Twitter icon">
+        </div>
+      </div>
+    </footer>
+
+    <!-- End of footer -->
+  </body>
+</html>

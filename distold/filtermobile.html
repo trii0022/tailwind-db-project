@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="/db_logo.9c637a65.webp">
+    <link rel="stylesheet" href="/index.e50cd025.css">
+    <link rel="stylesheet" href="/index.2cdaf7bc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@200;300;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-primary pt-10 pb-10">
+    <div class="relative ml-10 mr-10 bg-white pt-10">
+      <div class="fixed top-8 left-0 right-0 bg-primary pt-4 pb-4">
+        <div class="ml-14 mr-14 grid grid-cols-2 gap-2">
+          <a href="/filter.html" class="">
+            <div class="form-control">
+              <button class="btn-primary btn border-none bg-primary text-blackshade hover:bg-tertiary">
+                Reset
+              </button>
+            </div>
+          </a>
+
+          <a href="/filter.html" class="">
+            <div class="form-control">
+              <button class="btn-primary btn border-none bg-white text-primary hover:bg-slate-50">
+                Apply
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="m-4 ml-10 block rounded-lg bg-white">
+        <h1 class="sr-only">Categories</h1>
+
+        <div class="border-b border-blackshade py-6">
+          <h2 class="mt-3 text-sm text-blackshade">Cuisine</h2>
+          <!-- Filter section, show/hide based on section state. -->
+          <div class="pt-6" id="filter-section-0">
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <input id="cuisine-1" name="cuisine[]" value="italian" type="checkbox" class="h-4 w-4">
+                <label for="cuisine-1" class="ml-3 text-sm text-secondary">Italian</label>
+              </div>
+
+              <div class="flex items-center">
+                <input id="cuisine-2" name="cuisine[]" value="french" type="checkbox" class="h-4 w-4">
+                <label for="cuisine-2" class="ml-3 text-sm text-secondary">French</label>
+              </div>
+
+              <div class="flex items-center">
+                <input id="cuisine-3" name="cuisine[]" value="scandinavian" type="checkbox" checked="" class="h-4 w-4">
+                <label for="cuisine-3" class="ml-3 text-sm text-secondary">Scandinavian</label>
+              </div>
+
+              <div class="collapse">
+                <input type="checkbox">
+                <div class="collapse-title -mt-4 font-semibold text-primary">
+                  + See more
+                </div>
+                <div class="collapse-content">
+                  <div class="flex items-center">
+                    <input id="cuisine-4" name="cuisine[]" value="asian" type="checkbox" class="h-4 w-4 rounded">
+                    <label for="cuisine-4" class="ml-3 text-sm text-secondary">Asian</label>
+                  </div>
+
+                  <div class="flex items-center">
+                    <input id="cuisine-5" name="cuisine[]" value="slavic" type="checkbox" class="h-4 w-4">
+                    <label for="cuisine-5" class="ml-3 text-sm text-secondary">Slavic</label>
+                  </div>
+
+                  <div class="flex items-center">
+                    <input id="cuisine-6" name="cuisine[]" value="local" type="checkbox" class="h-4 w-4 rounded">
+                    <label for="cuisine-6" class="ml-3 text-sm text-secondary">Local</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-b border-blackshade py-6">
+          <h2 class="mt-3 text-sm text-blackshade">Type of restaurant</h2>
+          <!-- Filter section, show/hide based on section state. -->
+          <div class="pt-6" id="filter-section-1">
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <input id="type-1" name="type[]" value="casual" type="checkbox" class="h-4 w-4">
+                <label for="type-1" class="ml-3 text-sm text-secondary">Casual</label>
+              </div>
+              <div class="flex items-center">
+                <input id="type-2" name="type[]" value="gourmet" type="checkbox" class="h-4 w-4">
+                <label for="type-2" class="ml-3 text-sm text-secondary">Gourmet</label>
+              </div>
+
+              <div class="flex items-center">
+                <input id="type-3" name="type[]" value="finedining" type="checkbox" checked="" class="h-4 w-4">
+                <label for="type-3" class="ml-3 text-sm text-secondary">Fine dining</label>
+              </div>
+
+              <div class="flex items-center">
+                <input id="type-4" name="type[]" value="cafe" type="checkbox" class="h-4 w-4">
+                <label for="type-4" class="ml-3 text-sm text-secondary">Cafe</label>
+              </div>
+
+              <div class="flex items-center">
+                <input id="type-5" name="type[]" value="barcocktails" type="checkbox" class="h-4 w-4">
+                <label for="type-5" class="ml-3 text-sm text-secondary">Bar/cocktails</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-b border-blackshade py-6">
+          <h2 class="text-sm text-blackshade">Price</h2>
+
+          <div class="mt-4 flex w-64 rounded-full border-2 border-primary text-center">
+            <p class="border-r-2 border-primary py-2 pl-10 pr-8 text-sm hover:rounded-full hover:border-none hover:bg-primary">
+              €
+            </p>
+            <p class="border-r-2 border-primary py-2 pl-7 pr-7 text-sm hover:rounded-full hover:border-none hover:bg-primary">
+              €€
+            </p>
+            <p class="py-2 pl-6 pr-10 text-sm hover:rounded-full hover:border-none hover:bg-primary">
+              €€€
+            </p>
+          </div>
+        </div>
+
+        <div class="border-b border-blackshade py-6">
+          <h2 class="mt-3 text-sm text-blackshade">Seating option</h2>
+          <!-- Filter section, show/hide based on section state. -->
+          <div class="pt-6" id="filter-section-2">
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <input id="seating-1" name="seating[]" value="standard" type="checkbox" class="h-4 w-4">
+                <label for="seating-1" class="ml-3 text-sm text-secondary">Standard</label>
+              </div>
+
+              <div class="flex items-center">
+                <input id="seating-2" name="seating[]" value="terrace" type="checkbox" class="h-4 w-4">
+                <label for="seating-2" class="ml-3 text-sm text-secondary">Terrace</label>
+              </div>
+
+              <div class="flex items-center">
+                <input id="seating-3" name="seating[]" value="bar" type="checkbox" class="h-4 w-4">
+                <label for="seating-3" class="ml-3 text-sm text-secondary">Bar</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-b border-blackshade py-6">
+          <h2 class="text-sm text-blackshade">Events</h2>
+          <div class="pt-6">
+            <div class="flex items-center">
+              <input id="events-1" name="events[]" value="events" type="checkbox" class="h-4 w-4">
+              <label for="events-1" class="ml-3 text-sm text-secondary">Show restaurants with events</label>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="ml-5 mr-5 grid grid-cols-2 gap-2 pb-5">
+        <a href="/filter.html" class="">
+          <div class="form-control">
+            <button class="btn-primary btn border-none bg-white text-blackshade hover:bg-tertiary">
+              Reset
+            </button>
+          </div>
+        </a>
+
+        <a href="/filter.html" class="">
+          <div class="form-control">
+            <button class="btn-primary btn border-primary bg-white text-primary hover:border-2 hover:border-primary hover:bg-slate-50">
+              Apply
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+  <script src="/filtermobile.81f1bf7a.js"></script></body>
+</html>
